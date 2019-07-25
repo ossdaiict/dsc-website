@@ -45,7 +45,9 @@ body, html, .view{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#events-nav{
+  background-color: #3f51b5!important;
+}
 h1{
     letter-spacing: 2px;
 }
