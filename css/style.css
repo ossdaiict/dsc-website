@@ -103,3 +103,30 @@ h1{
 .card-text{
   font-size: 1vw !important;
 } */
+
+.tableClass{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #34495e;
+
+  max-height: 70%;
+  overflow: auto;
+}
+
+td, tr{
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  padding-left: 15px;
+}
+th{
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  padding-left: 15px;
+}
+
+.calendar{
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
