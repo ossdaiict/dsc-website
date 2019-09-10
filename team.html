@@ -14,6 +14,24 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
+    <style>
+        .my-flex-container-2{
+            background: rgb(167, 167, 167);
+            border: dotted black 3px;
+            font-size: 100px;
+        }
+        .my-card{
+            max-width: 15rem;
+        }
+        .my-card-image{
+            max-height: 15rem;
+            max-width: 100%;
+        }
+        .my-card-body{
+            max-height: 8rem;
+            overflow:scroll;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,7 +66,7 @@
                 </li>
             </ul>
 
-            <button type="button" class="btn btn-info   btn-sm">Contact Us</button>
+            <a href="contact.html"><button type="button" class="btn btn-info btn-sm">Contact Us</button></a>
         </div>
         <!--Collapsible Content Ends-->
 
@@ -56,7 +74,7 @@
     <!--Navbar Ends-->
 
     <!--Carousel Wrapper-->
-    <div id="carousel-groupphotos" class="carousel slide carousel-fade mx-auto d-block w-75 mh-100" data-interval="3000"
+    <div id="carousel-groupphotos" class="carousel slide carousel-fade mx-auto d-block col-sm-9 mh-100" data-interval="3000"
         data-ride="carousel" style="overflow: hidden;">
         <!--Indicators-->
         <ol class="carousel-indicators">
@@ -98,194 +116,224 @@
     <!--/.Carousel Wrapper-->
 
     <nav class="nav grey lighten-4 py-4">
-        <h1 class="h1-responsive ml-3">Team Members</h1>
+        <h1 class="h1-responsive ml-3">Core Members</h1>
     </nav>
 
     <!-- ADD YOUR CONTENT HERE-->
     <!--Card-->
-    <div class="cardsContainer">
-        <div class="row">
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                        <div class="mask rgba-white-slight"></div>
-                    </a> -->
-                </div>
-        
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Lead Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+    <div class="container">
+        <div class="d-flex flex-row my-flex-container flex-wrap justify-content-around">
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/MohamedShadab.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Mohamed Shadab</h5>
+                        <p class="card-text">Lead, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
                     </div>
                 </div>
-            </div> <!-- end of card1 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                <div class="mask rgba-white-slight"></div>
-                            </a> -->
-                </div>
-        
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Saif Kotwal</h5>
+                        <p class="card-text">Core, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
                     </div>
                 </div>
-            </div> <!-- end of card 2 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                    <div class="mask rgba-white-slight"></div>
-                                </a> -->
-                </div>
-        
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Dhvanee Mehta</h5>
+                        <p class="card-text">Core, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
                     </div>
                 </div>
-            </div> <!-- end of card 3 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-            
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a> -->
-                </div>
-            
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/TikamAlma.png" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Tikam Alma</h5>
+                        <p class="card-text">Core, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
                     </div>
                 </div>
-            </div> <!-- end of card 4 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-            
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                                                    <div class="mask rgba-white-slight"></div>
-                                                                </a> -->
-                </div>
-            
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/SumanthTangirala.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Sumanth Tangirala</h5>
+                        <p class="card-text">Core, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
                     </div>
                 </div>
-            </div> <!-- end of card 5 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-            
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                                                    <div class="mask rgba-white-slight"></div>
-                                                                </a> -->
-                </div>
-            
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end of card 6 -->
+            </div>
+            <!-- EndOF Card-1 -->
         </div>
     </div>
     
     <!--/.Card-->
+
+
+    <nav class="nav grey lighten-4 py-4">
+        <h1 class="h1-responsive ml-3">Team Members</h1>
+    </nav>
+    <div class="container">
+        <div class="d-flex flex-row my-flex-container flex-wrap justify-content-around">
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/HimadriPandya.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Himadri Pandya</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">Kernel</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/BhavikMehta.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Bhavik Mehta</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/AneriPatel.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Aneri Patel</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/RhythmPatel.png" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Rhythm Patel</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Smit Shah</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Harsh Patel</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/KartikeyaGokhale.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Kartikeya Gokhale</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Abhinav Raj</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Hemant Jain</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/MeetPatel.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Meet Patel</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Hitesh Goyal</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <div class="mx-5 my-3 border">
+                <div class="card my-card">
+                    <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                    <div class="card-body my-card-body">
+                        <h5 class="card-title">Visaj Shah</h5>
+                        <p class="card-text">Developer, DSC</p>
+                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+        </div>
+    </div>
+    
     <!--END YOUR CONTENT HERE-->
 
     <!--Footer Starts Here-->
