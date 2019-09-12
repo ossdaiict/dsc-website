@@ -14,6 +14,7 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
     <style>
         .my-flex-container-2{
             background: rgb(167, 167, 167);
@@ -28,12 +29,12 @@
             max-width: 100%;
         }
         .my-card-body{
-            max-height: 8rem;
+            /* max-height: 8rem; */
             overflow:scroll;
         }
         .my-card:hover{
             transition: 0.3s;
-            transform: scale(1.1);
+            /* transform: scale(1.1); */
         }
     </style>
 </head>
@@ -128,20 +129,34 @@
     <div class="container">
         <div class="d-flex flex-row my-flex-container flex-wrap justify-content-around">
             <!-- Card-1 -->
-            <div class="mx-5 my-3 border">
-                <div class="card my-card">
-                    <img src="img/team/MohamedShadab.jpg" class="card-img-top my-card-image" alt="...">
-                    <div class="card-body my-card-body">
-                        <h5 class="card-title">Mohamed Shadab</h5>
-                        <p class="card-text">Lead, DSC</p>
-                        <p class="card-text"><small class="text-muted">React, Redux</small></p>
+            <div class="mx-5 my-3 info-card">
+                <div class=" my-card ">
+                    <div class="front border">
+                        <img src="img/team/MohamedShadab.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title">Mohamed Shadab</h5>
+                            <p class="card-text">Lead, DSC</p>
+                            <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title">Mohamed Shadab</h5>
+                            <p class="card-text">❤ Open Source</p>
+                            <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                            <div class="social">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-github"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- EndOF Card-1 -->
             <!-- Card-1 -->
             <div class="mx-5 my-3 border">
-                <div class="card my-card">
+                <div class="card my-card info-card">
                     <img src="img/team/SaifKotwal.jpg" class="card-img-top my-card-image" alt="...">
                     <div class="card-body my-card-body">
                         <h5 class="card-title">Saif Kotwal</h5>
@@ -205,7 +220,7 @@
                     <div class="card-body my-card-body">
                         <h5 class="card-title">Himadri Pandya</h5>
                         <p class="card-text">Developer, DSC</p>
-                        <p class="card-text"><small class="text-muted">Kernel</small></p>
+                        <p class="card-text"><small class="text-muted">Linux Kernel</small></p>
                     </div>
                 </div>
             </div>
