@@ -154,7 +154,7 @@ th{
 }
 
 .back {
-	/* width: 250px;*/
+  /* width: 250px;*/
   min-height: 330px;
   -webkit-transform: rotateY(-180deg);
   background: white;
