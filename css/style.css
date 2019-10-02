@@ -169,6 +169,9 @@ th{
 	-webkit-transform: rotateY(180deg);
 }
 
+.height-issue-solver{
+  min-height: 400px;
+}
 
 /* Social buttons */
 .social {
