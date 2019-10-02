@@ -169,6 +169,14 @@ th{
 	-webkit-transform: rotateY(180deg);
 }
 
+.height-issue-solver{
+  min-height: 400px;
+}
+
+.card-text{
+  overflow: scroll;
+  max-height: 250px;
+}
 
 /* Social buttons */
 .social {
