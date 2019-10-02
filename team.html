@@ -9,11 +9,41 @@
     <link rel="icon" href="img/dsc_logo.png">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+    <!-- test try to remove square font awesome error -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">  
+    <!-- end of test -->
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .my-flex-container-2{
+            background: rgb(167, 167, 167);
+            border: dotted black 3px;
+            font-size: 100px;
+        }
+        .my-card{
+            max-width: 15rem;
+        }
+        .my-card-image{
+            max-height: 15rem;
+            max-width: 100%;
+        }
+        .my-card-body{
+            /* max-height: 8rem; */
+            height: auto;
+            overflow:scroll;
+        }
+        .my-card:hover{
+            transition: 0.3s;
+            /* transform: scale(1.1); */
+        }
+    </style>
 </head>
 
 <body>
@@ -48,7 +78,7 @@
                 </li>
             </ul>
 
-            <button type="button" class="btn btn-info   btn-sm">Contact Us</button>
+            <a href="contact.html"><button type="button" class="btn btn-info btn-sm">Contact Us</button></a>
         </div>
         <!--Collapsible Content Ends-->
 
@@ -56,7 +86,7 @@
     <!--Navbar Ends-->
 
     <!--Carousel Wrapper-->
-    <div id="carousel-groupphotos" class="carousel slide carousel-fade mx-auto d-block w-75 mh-100" data-interval="3000"
+    <div id="carousel-groupphotos" class="carousel slide carousel-fade mx-auto d-block col-sm-9 mh-100" data-interval="3000"
         data-ride="carousel" style="overflow: hidden;">
         <!--Indicators-->
         <ol class="carousel-indicators">
@@ -98,233 +128,458 @@
     <!--/.Carousel Wrapper-->
 
     <nav class="nav grey lighten-4 py-4">
-        <h1 class="h1-responsive ml-3">Team Members</h1>
+        <h1 class="h1-responsive ml-3">Core Members</h1>
     </nav>
 
     <!-- ADD YOUR CONTENT HERE-->
     <!--Card-->
-    <div class="cardsContainer">
-        <div class="row">
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                        <div class="mask rgba-white-slight"></div>
-                    </a> -->
-                </div>
-        
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Lead Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+    <div class="container">
+        <div class="d-flex flex-row my-flex-container flex-wrap justify-content-around">
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/MohamedShadab.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Mohamed Shadab</strong></h5>
+                            <p class="card-text"><strong>Lead, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Mohamed Shadab</strong></h5>
+                            <p class="card-text">❤ Open Source</p>
+                            <p class="card-text"><small class="text-muted">React, Redux</small></p>
+                            <div class="social">
+                                <a href="https://twitter.com/@statebait" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/mohamed-shadab-46b513125" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/shadxx7" class="fa fa-github"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- end of card1 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                <div class="mask rgba-white-slight"></div>
-                            </a> -->
-                </div>
-        
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/SaifKotwal.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Saif Kotwal</strong></h5>
+                            <p class="card-text"><strong>Core, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Web Development</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Saif Kotwal</strong></h5>
+                            <p class="card-text">I'm a 4th year Student pursing bachelor's in Information and communication technology from DA-IICT. My areas of interest include system design and back end development.</p>
+                            <div class="social">
+                                <a href="https://twitter.com/Saif_n_sound" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/saif-kotwal-7467ba161" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/saifnsound" class="fa fa-github"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- end of card 2 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                    <div class="mask rgba-white-slight"></div>
-                                </a> -->
-                </div>
-        
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Dhvanee Mehta</strong></h5>
+                            <p class="card-text"><strong>Core, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Web Development</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Dhvanee Mehta</strong></h5>
+                            <p class="card-text">I'm a 4th year Student pursing bachelor's in Information and communication technology from DA-IICT...</p>
+                            <div class="social">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-github"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- end of card 3 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-            
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a> -->
-                </div>
-            
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/TikamAlma.png" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Tikam Alma</strong></h5>
+                            <p class="card-text"><strong>Core, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Information Security and Web Development</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Tikam Alma</strong></h5>
+                            <p class="card-text">Develop, Hack and Secure.Willing to learn anything new and amazing.</p>
+                            <div class="social">
+                                <a href="https://twitter.com/n3ur0mancer" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/tikam-alma-993225b8/" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/Tikam02" class="fa fa-github"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- end of card 4 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
-            
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                                                    <div class="mask rgba-white-slight"></div>
-                                                                </a> -->
-                </div>
-            
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/SumanthTangirala.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Sumanth Tangirala</strong></h5>
+                            <p class="card-text"><strong>Core, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Internet of Things, Machine Learning</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Sumanth Tangirala</strong></h5>
+                            <p class="card-text">An inquisitive person still wading through extremely deep waters of computer science. Unsatis7ed with my current ankle-deep knowledge and excited to venture new domains.</p>
+                            <div class="social">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/sumanthtangirala" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-github"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- end of card 5 -->
-
-            <div class="col-sm card m-5" style="width: 19rem; height: 26rem; min-width: 15rem; max-width: 19rem;">
+            </div>
+            <!-- EndOF Card-1 -->
             
-                <!--Card image-->
-                <div class="view overlay">
-                    <!-- <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt=""> -->
-                    <img src="img/team/sample.jpg" class="img-fluid" alt="profile-picture">
-                    <!-- <a href="#">
-                                                                    <div class="mask rgba-white-slight"></div>
-                                                                </a> -->
-                </div>
-            
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h4 class="card-title">Mr Developer</h4>
-                    <!--Text-->
-                    <p class="card-text" style="margin-top: 0rem;">Another Developer @ DSC</p>
-                    <div class="btn-group " role="group" aria-label="Connect Via">
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-github-square"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="far fa-envelope"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-facebook"
-                                style="font-size: 1.5rem;"></i></a>
-                        <a href="#" class="btn-floating btn-primary btn-sm mr-3"><i class="fab fa-twitter"
-                                style="font-size: 1.5rem;"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end of card 6 -->
         </div>
     </div>
     
     <!--/.Card-->
+
+
+    <nav class="nav grey lighten-4 py-4">
+        <h1 class="h1-responsive ml-3">Team Members</h1>
+    </nav>
+    <div class="container">
+        <div class="d-flex flex-row my-flex-container flex-wrap justify-content-around">
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/HimadriPandya.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Himadri Pandya</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Virtualization, Linux kernel</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Himadri Pandya</strong></h5>
+                            <p class="card-text">Himadri is pursuing a Masters in Technology in the domain of Information and Communication Technology with a specialization in Machine Intelligence from DAIICT. She is currently exploring the 7eld of computer vision. She is fascinated with Operating Systems and has worked with the Linux kernel as an Outreachy intern. During her internship, she has worked on improving the Linux kernel support for running as a guest on Microsoft's hypervisor Hyper-V with larger page sizes on ARM64 architecture. When she is not glued to the computer screen, she reads motivational and philosophical literature, practices Karate and plays her guitar.</p>
+                            <div class="social">
+                                <a href="https://twitter.com/himadrispandya" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/himadrispandya/" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/himadrispandya/" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/BhavikMehta.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Bhavik Mehta</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Java, Android dev, Distributed database, Cloud</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Bhavik Mehta</strong></h5>
+                            <p class="card-text">I have been into Android development from 7rst year of college. After that, it was no looking back it was always development. My ideology is to stuck to one technology and exploring the same in great depth. Always free to resolve Java and Android queries. Apart from that, I have also been into Hadoop system. Ofcourse, Ubuntu is my Juliet.</p>
+                            <div class="social">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/bhavik-mehta-070658139" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/bravoo84" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/AneriPatel.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Aneri Patel</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Data Science</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Aneri Patel</strong></h5>
+                            <p class="card-text">Passionate about 7nding patterns in data to eventually discover the underlying story and solve problems.</p>
+                            <div class="social">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/aneri-patel-ab9433143/" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/RhythmPatel.png" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Rhythm Patel</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">C++, HTML5, CSS3, JavaScript</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Rhythm Patel</strong></h5>
+                            <p class="card-text">I have worked with HTML, CSS and JavaScript for my projects and regularly practice competitive programming. I am the webmaster of IEEE IAS DA-IICT SB.</p>
+                            <div class="social">
+                                <a href="https://twitter.com/prhythm3099" class="fa fa-twitter"></a>
+                                <a href="http://www.linkedin.com/in/rhythm-patel-300499" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/rhythm-3099" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/SmitShah.JPG" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Smit Shah</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Machine Learning</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Smit Shah</strong></h5>
+                            <p class="card-text">Machine learning and Deep learning enthusiast. Love working with different technologies and exploring math.</p>
+                            <div class="social">
+                                <a href="https://twitter.com/smit2k14" class="fa fa-twitter"></a>
+                                <a href="https://linkedin.com/in/smitshah2k" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/smit2k14" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/HarshPatel.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Harsh Patel</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Android Development, Backend Development, Deep Learning</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Harsh Patel</strong></h5>
+                            <p class="card-text">I am an experienced developer having expertise in the 7eld of Android Development, Backend Systems Management and Deep Learning. I also do like to explore Computer Vision and Machine Learning 7elds. I am also a student developer of GSoC'17 program.</p>
+                            <div class="social">
+                                <a href="https://twitter.com/harsh_2711" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/harsh-patel-7472a8a1/" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/harsh-2711" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/KartikeyaGokhale.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Kartikeya Gokhale</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Web Development</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Kartikeya Gokhale</strong></h5>
+                            <p class="card-text">Software Development Enthusiast. Interested in web technologies and development. Experienced at front-end web development and looking forward to back-end opportunities. Working as a GSoC '19 student developer at Percona and with Quze in developing solutions in educational space and working for a force of change.</p>
+                            <div class="social">
+                                <a href="https://twitter.com/kgokhale99" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/k-gokhale/" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/Kartikeya99/" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/AbhinavRaj.jpeg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Abhinav Raj</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Software Developement</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Abhinav Raj</strong></h5>
+                            <p class="card-text">Experienced Developer with a demonstrated history of working in the information technology and services industry. Skilled in <strong>Android Development, ML, Web Design, and Java</strong> . Strong engineering professional with a BTech focused in Information and Communication Technology from DA-IICT</p>
+                            <div class="social">
+                                <a href="https://twitter.com/CoderAbhinav" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/abhinav-raj-234497159/" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/abhinavraj23" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/HemantJain.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Hemant Jain</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Python, Django</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Hemant Jain</strong></h5>
+                            <p class="card-text">Web Developer with expertise in Python & Django</p>
+                            <div class="social">
+                                <a href="https://twitter.com/HMTJ99" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/hemant-jain-b24394193/" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/hmtj99" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/MeetPatel.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Meet Patel</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Python, JavaScript, Django, Bootstrap</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Meet Patel</strong></h5>
+                            <p class="card-text">Software Development Enthusiast. Interested in Web infrastructure. Experienced in web development with <strong>Django, JavaScript & Bootstrap</strong>.</p>
+                            <div class="social">
+                                <a href="https://twitter.com/Meet100Patel" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/meet100patel/" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/meet59patel" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/HiteshGoyal.jpeg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Hitesh Goyal</strong></h5>
+                            <p class="card-text"><strong>Developer, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">NodeJs, Python</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Hitesh Goyal</strong></h5>
+                            <p class="card-text">Web developer with experience in NodeJs & Python.</p>
+                            <div class="social">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="https://www.linkedin.com/in/hitgo" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/hitgo00" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            <!-- Card-1 -->
+            <div class="mx-5 my-3 info-card height-issue-solver">
+                <div class="my-card">
+                    <div class="front border">
+                        <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Visaj Shah</strong></h5>
+                            <p class="card-text"><strong>Social Media Handler, DSC</strong></p>
+                            <p class="card-text"><small class="text-muted">Web Developement</small></p>
+                        </div>
+                    </div>
+                    <div class="back border">
+                        <div class="card-body my-card-body">
+                            <h5 class="card-title"><strong>Visaj Shah</strong></h5>
+                            <p class="card-text">Social Media Handler @ Developer Student Club, DA-IICT</p>
+                            <div class="social">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EndOF Card-1 -->
+            
+        </div>
+    </div>
+    
     <!--END YOUR CONTENT HERE-->
 
-    <!--Footer Starts Here-->
-    <footer class="page-footer font-small grey lighten-4" style="clear: left">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text-muted">DSC DA-IICT</p>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="https://medium.com/code-dementia" class="text-muted">Blog - Code Dementia</a>
-                </div>
-            </div>
-
-            <br>
-            <!--Icons For Footer-->
-            <div class="row">
-                <div class="col-md-6">
-                    <a class="fb-ic">
-                        <i class="fab fa-facebook-f grey-text fa-lg mr-2"></i>
-                    </a>
-                    <a class="medium-ic" href="https://medium.com/code-dementia">
-                        <i class="fab fa-medium-m grey-text fa-lg mr-2"></i>
-                    </a>
-                    <a class="github-ic" href="https://github.com/dscdaiict">
-                        <i class="fab fa-github grey-text fa-lg"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!--Copyright Text-->
-        <div class="footer-copyright py-2">
-            <div class="container-fluid text-center text-md-left">© 2019 Google Developers</div>
-        </div>
-    </footer>
     <!--Footer Ends Here-->
 
     <!--Project Ends Here-->
