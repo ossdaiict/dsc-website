@@ -173,6 +173,11 @@ th{
   min-height: 400px;
 }
 
+.card-text{
+  overflow: scroll;
+  max-height: 250px;
+}
+
 /* Social buttons */
 .social {
 	list-style: none;
