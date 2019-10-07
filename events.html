@@ -15,6 +15,27 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .event-card{
+            max-width: 20rem;
+            object-fit: fill;
+        }
+        .event-card img {
+            object-fit: cover;
+            max-height: 19rem;
+        }
+        .card-text{
+            display: auto;
+            max-height: 5rem;
+        }
+        .my-flex{
+            display: flex;
+        }
+        #event1{
+            display: contents;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,7 +80,7 @@
     <!-- ADD YOUR CONTENT HERE-->
 
     <!--Carousel Wrapper-->
-    <div id="carousel-groupphotos" class="carousel slide carousel-fade mx-auto d-block col-sm-8 mh-100" data-interval="3000"
+    <div id="carousel-groupphotos" class="carousel slide carousel-fade mx-auto d-block col-md-8 mh-100" data-interval="3000"
         data-ride="carousel" style="overflow: hidden;">
         <!--Indicators-->
         <ol class="carousel-indicators">
@@ -77,12 +98,12 @@
             <!--/First slide-->
             <!--Second slide-->
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/events/2.jpg" alt="Second slide"">
+                <img class="d-block w-100" src="img/events/2.jpg" alt="Second slide">
             </div>
             <!--/Second slide-->
             <!--Third slide-->
             <div class="carousel-item">
-                <img class="d-block w-100" src="img/events/3.jpg" alt="Third slide"">
+                <img class="d-block w-100" src="img/events/3.jpg" alt="Third slide">
             </div>
             <!--/Third slide-->
         </div>
@@ -100,43 +121,57 @@
     </div>
     <!--/.Carousel Wrapper-->
 
-    <nav class="nav grey lighten-4 py-4" >
+    <nav class="nav grey lighten-4 py-4 d-flex flex-row justify-content-around">
         <h1 class="h1-responsive ml-3">Upcoming Events</h1>
     </nav>
     <!-- <h3 class="h3-responsive ml-3">Upcoming</h3>-->
     
     <!--END YOUR CONTENT HERE-->
 
-
-    <h3 class="h3-responsive ml-3">Upcoming</h3>
-<div class="row">
-<div class="card ml-3 mr-3 mb-3 mt-3 col-md-6 col-lg-4 col-sm-12">
-
-
-    <div class="view overlay">
-      <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-      <a href="#!">
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-  
-    <!-- Card content -->
-    <div class="card-body">
-  
-      <!-- Title -->
-      <h4 class="card-title">Sample event</h4>
-      <!-- Text -->
-      <p class="card-text">Event details</p>
-      <p class="mb-0"><i class="fas fa-calendar mr-2"></i>26.09.2019</p>
-      <!-- Button -->
-      <a href="#" class="btn btn-primary">Register</a>
-  
-    </div>
-  
-  </div>
-</div>
-
-    <!--Footer Starts Here-->
+    
+    <div class="container">
+        <div class="my-flex d-flex flex-row my-flex-container flex-wrap justify-content-around">
+            <!-- event 1 -->
+            <div id="event1">
+                <div class="card event-card my-3">
+                    <img src="img/events/card/OSS.png" class="card-img-top border-dark">
+                    <div class="card-body">
+                        <h4 class="card-title">GSoC, Outreachy and OSS</h4>
+                        <p class="card-text">Talks by GSoCers and Outreachy students, Introduction to the Open Source Software community of DA-IICT alongside a brief introduction to Hacktoberfest</p>
+                        <p class="card-date"><i class="fas fa-calendar mr-2"></i>9 Oct, 2019</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of event1 -->
+            <!-- event 1 -->
+            <div id="event1">
+                <div class="card event-card my-3">
+                    <img src="img/events/card/djangogrls.png" class="card-img-top border-dark">
+                    <div class="card-body">
+                        <h4 class="card-title">Django Girls, Gandhinagar</h4>
+                        <p class="card-text"><strong>Build your first website.</strong> It is a full-day workshop with opportunity to network with other DevFest and iFest attendees.</p>
+                        <p class="card-date"><i class="fas fa-calendar mr-2"></i>13 Oct, 2019</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of event1 -->
+            <!-- event 1 -->
+            <div id="event1">
+                <div class="card event-card my-3">
+                    <img src="img/events/card/git.png" class="card-img-top border-dark">
+                    <div class="card-body">
+                        <h4 class="card-title">Git/GitHub Session</h4>
+                        <p class="card-text" style="max-height: 15rem;">You'll be introduced on how to use Git/GitHub to collaboratively develop large projects. It will go through the basic commands of Git. Also, we might touch upon some advanced concepts like resolving merge conflicts etc.</p>
+                        <p class="card-date"><i class="fas fa-calendar mr-2"></i>Coming soon...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of event1 -->
+                
+            </div>
+        </div>
+        
+        <!--Footer Starts Here-->
     <footer class="page-footer font-small grey lighten-4">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
