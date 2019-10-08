@@ -31,18 +31,23 @@
             max-width: 15rem;
         }
         .my-card-image{
-            max-height: 15rem;
-            max-width: 100%;
+            /* max-height: 15rem;
+            max-width: 100%; */
+            object-fit: cover;
         }
         .my-card-body{
             /* max-height: 8rem; */
             height: auto;
-            overflow:scroll;
+            overflow:auto;
         }
         .my-card:hover{
             transition: 0.3s;
             /* transform: scale(1.1); */
         }
+        .my-flex{
+            display: flex;
+        }
+        /* ***** */
     </style>
 </head>
 
@@ -134,7 +139,7 @@
     <!-- ADD YOUR CONTENT HERE-->
     <!--Card-->
     <div class="container">
-        <div class="d-flex flex-row my-flex-container flex-wrap justify-content-around">
+        <div class="my-flex d-flex flex-row my-flex-container flex-wrap justify-content-around">
             <!-- Card-1 -->
             <div class="mx-5 my-3 info-card">
                 <div class="my-card">
@@ -162,7 +167,7 @@
             </div>
             <!-- EndOF Card-1 -->
             <!-- Card-1 -->
-            <div class="mx-5 my-3 info-card">
+            <div class="mx-5 my-3 info-card height-issue-solver">
                 <div class="my-card">
                     <div class="front border">
                         <img src="img/team/SaifKotwal.jpg" class="card-img-top my-card-image" alt="...">
@@ -186,8 +191,9 @@
                 </div>
             </div>
             <!-- EndOF Card-1 -->
+
             <!-- Card-1 -->
-            <div class="mx-5 my-3 info-card">
+            <div class="mx-5 my-3 info-card height-issue-solver">
                 <div class="my-card">
                     <div class="front border">
                         <img src="img/team/sample.jpg" class="card-img-top my-card-image" alt="...">
