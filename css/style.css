@@ -99,22 +99,6 @@ h1{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
 }
-/* .card-title{
-  font-size: 1.5vw;
-}
-.card-text{
-  font-size: 1vw !important;
-} */
-
-.tableClass{
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  color: #34495e;
-
-  max-height: 70%;
-  overflow: auto;
-}
 
 td, tr{
   font-size: 18px !important;
@@ -127,17 +111,13 @@ th{
   padding-left: 15px;
 }
 
-.calendar{
-  width: 40%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 /* *********** Flip Card ************* */
 
 .info-card {
   float: left;
   -webkit-perspective: 600px;
+  max-width: 15rem;
+  object-fit: fill;
 }
 
 .front, .back {
@@ -149,7 +129,7 @@ th{
 
 .front {
   position: absolute;
-  overflow: scroll;
+  overflow: auto;
 	/* z-index: 1; */
 }
 
@@ -158,7 +138,7 @@ th{
   min-height: 330px;
   -webkit-transform: rotateY(-180deg);
   background: white;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .info-card:hover .back {
@@ -174,7 +154,7 @@ th{
 }
 
 .card-text{
-  overflow: scroll;
+  overflow: auto;
   max-height: 250px;
 }
 
