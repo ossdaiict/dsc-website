@@ -1,4 +1,3 @@
-# DAIICT - Google Developer Student Club Website
-Website For DA-IICT Google DSC 
+# Developer Student Club DA-IICT Website
 
-https://hmtj99.github.io/dsc_website/
+https://ossdaiict.github.io/dsc-website/

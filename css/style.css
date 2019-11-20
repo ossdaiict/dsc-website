@@ -1,111 +1,114 @@
-@import url(//fonts.googleapis.com/css?family=Lato:400,900);
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-body, html, .view{
-    height:100%;
+@import url("https://fonts.googleapis.com/css?family=Lato:400, 900");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+body,
+html,
+.view {
+  height: 100%;
 }
 
-.bg1{
-    background-image: url("../img/Homepage/2.jpg");
-    /* opacity: 0.8; */
+.bg1 {
+  background-image: url("../img/Homepage/2.jpg");
+  /* opacity: 0.8; */
 
-    height:100%;
+  height: 100%;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bg2{
-    background-image: url("../img/Homepage/1.jpg");
-    /* opacity: 0.8; */
+.bg2 {
+  background-image: url("../img/Homepage/1.jpg");
+  /* opacity: 0.8; */
 
-    height:100%;
+  height: 100%;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bg3{
-    background-image: url("../img/Homepage/3.jpg");
-    /* opacity: 0.8; */
+.bg3 {
+  background-image: url("../img/Homepage/3.jpg");
+  /* opacity: 0.8; */
 
-    height:100%;
+  height: 100%;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bg4{
-    background-image: url("../img/Homepage/4.jpg");
-    /* opacity: 0.8; */
+.bg4 {
+  background-image: url("../img/Homepage/4.jpg");
+  /* opacity: 0.8; */
 
-    height:100%;
+  height: 100%;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#events-nav{
-  background-color: #3f51b5!important;
+#events-nav {
+  background-color: #3f51b5 !important;
 }
-h1{
-    letter-spacing: 2px;
+h1 {
+  letter-spacing: 2px;
 }
 
 .top-nav-collapse {
-    background-color: #3f51b5 !important;
-  }
-  
-  /* .navbar:not(.top-nav-collapse) {
+  background-color: #3f51b5 !important;
+}
+
+/* .navbar:not(.top-nav-collapse) {
     background: transparent !important;
   } */
-  
-  @media (max-width: 991px) {
-    .navbar:not(.top-nav-collapse) {
-      background: #3f51b5 !important;
-    }
-  }
 
-  .first{
-    margin-top: 200px;
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #3f51b5 !important;
   }
-  .second{
-    margin-top: 100px;
-  }
+}
 
-  .second-img{
-    margin-top: 150px;
-  }
+.first {
+  margin-top: 200px;
+}
+.second {
+  margin-top: 100px;
+}
 
-  .third{
-    margin-top: 100px;
-  }
+.second-img {
+  margin-top: 150px;
+}
 
-  .wow{
-    visibility: hidden;
-  }
+.third {
+  margin-top: 100px;
+}
 
-  .vertical-center{
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
+.wow {
+  visibility: hidden;
+}
 
-    display: flex;
-    align-items: center;
-  }
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
 
-.cardsContainer{
+  display: flex;
+  align-items: center;
+}
+
+.cardsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
 }
 
-td, tr{
+td,
+tr {
   font-size: 18px !important;
   font-weight: 300 !important;
   padding-left: 15px;
 }
-th{
+th {
   font-size: 25px !important;
   font-weight: 500 !important;
   padding-left: 15px;
@@ -120,17 +123,18 @@ th{
   object-fit: fill;
 }
 
-.front, .back {
-	/* background: #FFF; */
-	transition: -webkit-transform 1s;
-	-webkit-transform-style: preserve-3d;
+.front,
+.back {
+  /* background: #FFF; */
+  transition: -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
 }
 
 .front {
   position: absolute;
   overflow: auto;
-	/* z-index: 1; */
+  /* z-index: 1; */
 }
 
 .back {
@@ -138,53 +142,52 @@ th{
   min-height: 330px;
   -webkit-transform: rotateY(-180deg);
   background: white;
-	overflow: auto;
+  overflow: auto;
 }
 
 .info-card:hover .back {
-	-webkit-transform: rotateY(0);
+  -webkit-transform: rotateY(0);
 }
 
 .info-card:hover .front {
-	-webkit-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
-.height-issue-solver{
+.height-issue-solver {
   min-height: 400px;
 }
 
-.card-text{
+.card-text {
   overflow: auto;
   max-height: 250px;
 }
 
 /* Social buttons */
 .social {
-	list-style: none;
-	padding: 0px;
-	margin-top: 25px;
-	text-align: center;
+  list-style: none;
+  padding: 0px;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .social a {
-    position: relative;
-    display: inline-block;
-    min-width: 40px;
-    padding: 10px 0px;
-    margin: 0px 5px;
-    overflow: hidden;
-    text-align: center;
-    border-radius: 40px;
+  position: relative;
+  display: inline-block;
+  min-width: 40px;
+  padding: 10px 0px;
+  margin: 0px 5px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 40px;
 }
 
-
 a.social-icon {
-	text-decoration: none !important;
-	box-shadow: 0px 0px 1px rgb(51, 51, 51);
-	box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
-	}
+  text-decoration: none !important;
+  box-shadow: 0px 0px 1px rgb(51, 51, 51);
+  box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
+}
 a.social-icon:hover {
-	color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .fa {
@@ -195,22 +198,22 @@ a.social-icon:hover {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  }
+}
 
-  .fa:hover {
-      opacity: 0.7;
-  }
+.fa:hover {
+  opacity: 0.7;
+}
 
-  .fa-twitter {
-  background: #55ACEE;
+.fa-twitter {
+  background: #55acee;
   color: white;
-  }
+}
 
-  .fa-linkedin {
+.fa-linkedin {
   background: #007bb5;
   color: white;
-  }
-  .fa-github {
+}
+.fa-github {
   background: black;
   color: white;
-  }
+}

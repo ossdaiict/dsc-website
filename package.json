@@ -1,0 +1,21 @@
+{
+  "name": "dsc-website",
+  "description": "Website for Developer Student Club DA-IICT",
+  "version": "1.0.0",
+  "license": "GPL-3.0-or-later",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ossdaiict/dsc-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ossdaiict/dsc-website/issues"
+  },
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build *.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
