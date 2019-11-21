@@ -15,6 +15,17 @@
         "design",
         "maintenance"
       ]
+    },
+    {
+      "login": "meet59patel",
+      "name": "Meet Patel",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/45785817?v=4",
+      "profile": "https://github.com/meet59patel",
+      "contributions": [
+        "code",
+        "design",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
