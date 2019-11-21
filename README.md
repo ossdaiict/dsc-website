@@ -1,4 +1,5 @@
 # Developer Student Club DA-IICT Website
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 https://ossdaiict.github.io/dsc-website/
 
@@ -15,3 +16,19 @@ https://ossdaiict.github.io/dsc-website/
 - Open a browser and go to `http://127.0.0.1:8080/`.
 
 - Now make changes to any of the html, js or css files and the changes should automatically reflect on the website.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/hmtj99"><img src="https://avatars1.githubusercontent.com/u/45735383?v=4" width="100px;" alt="Hemant Jain"/><br /><sub><b>Hemant Jain</b></sub></a><br /><a href="https://github.com/ossdaiict/dsc-website/commits?author=hmtj99" title="Code">💻</a> <a href="#design-hmtj99" title="Design">🎨</a> <a href="#maintenance-hmtj99" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
