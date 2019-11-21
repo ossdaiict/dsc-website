@@ -1,5 +1,5 @@
 # Developer Student Club DA-IICT Website
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 https://ossdaiict.github.io/dsc-website/
 
@@ -26,6 +26,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/hmtj99"><img src="https://avatars1.githubusercontent.com/u/45735383?v=4" width="100px;" alt="Hemant Jain"/><br /><sub><b>Hemant Jain</b></sub></a><br /><a href="https://github.com/ossdaiict/dsc-website/commits?author=hmtj99" title="Code">💻</a> <a href="#design-hmtj99" title="Design">🎨</a> <a href="#maintenance-hmtj99" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/meet59patel"><img src="https://avatars2.githubusercontent.com/u/45785817?v=4" width="100px;" alt="Meet Patel"/><br /><sub><b>Meet Patel</b></sub></a><br /><a href="https://github.com/ossdaiict/dsc-website/commits?author=meet59patel" title="Code">💻</a> <a href="#design-meet59patel" title="Design">🎨</a> <a href="#maintenance-meet59patel" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
