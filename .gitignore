@@ -105,3 +105,6 @@ dist
 
 # Mac Metadata
 .DS_Store
+
+# VS Code
+.vscode
