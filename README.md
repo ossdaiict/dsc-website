@@ -1,4 +1,5 @@
 # Developer Student Club DA-IICT Website
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
 https://ossdaiict.github.io/dsc-website/
@@ -7,11 +8,9 @@ https://ossdaiict.github.io/dsc-website/
 
 - You need Node & Yarn to run this application. Download them here - [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com).
 
-- Run the following command to run a live server of the website with hot reloading enabled:
+- Begin with installing dependencies using: `yarn`
 
-  ```bash
-  yarn dev
-  ```
+- Then run the following command to run a live server of the website with hot reloading enabled: `yarn dev`
 
 - Open a browser and go to `http://127.0.0.1:8080/`.
 
