@@ -1,13 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,900&display=swap");
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 body,
 html,
 .view {
   height: 100%;
 }
 
+@media (max-width: 700px) {
+  .notice {
+    margin-top: 32px;
+    font-size: 24px !important;
+  }
+}
+
 .bg1 {
-  background-image: url("../assets/images/Homepage/2.jpg");
+  background-image: url('../assets/images/Homepage/2.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgs {
+  background-image: url('../assets/images/slop-back-mini.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +30,7 @@ html,
 }
 
 .bg2 {
-  background-image: url("../assets/images/Homepage/1.jpg");
+  background-image: url('../assets/images/Homepage/1.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +38,7 @@ html,
 }
 
 .bg3 {
-  background-image: url("../assets/images/Homepage/3.jpg");
+  background-image: url('../assets/images/Homepage/3.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +46,7 @@ html,
 }
 
 .bg4 {
-  background-image: url("../assets/images/Homepage/4.jpg");
+  background-image: url('../assets/images/Homepage/4.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
