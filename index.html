@@ -8,7 +8,7 @@
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>DSC DA-IICT</title>
-    <link rel="icon" href="assets/images/dsc_logo.png" />
+    <link rel="icon" href="assets/images/dsc_symbol_notext.png" />
 
     <!-- Font Awesome -->
     <link
@@ -17,270 +17,330 @@
     />
     <!-- Bootstrap core CSS -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
     />
-    <!-- Material Design Bootstrap -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
+      type="text/css"
     />
 
     <!-- Custom style -->
     <link href="css/style.css" rel="stylesheet" />
-
-    <!-- Footer style -->
-    <link rel="stylesheet" href="css/footer.css" />
   </head>
 
   <body>
-    <!-- Start your project here-->
+    <!-- Start your project here -->
 
-    <!--Navbar-->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar indigo"
-    >
-      <a class="navbar-brand" href="/">
-        <img src="assets/images/dsc_logo.png" alt="dsc_logo" height="30" />
-      </a>
-      <!--Collapse Button-->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#itemList"
-        aria-controls="itemList"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--Collapse Button Ends-->
-
-      <!--Collapsible Content-->
-      <div class="collapse navbar-collapse" id="itemList">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="./events.html" class="nav-link">Events</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="./team.html" class="nav-link">Team</a>
-          </li>
-        </ul>
-
-        <a href="./contact.html">
-          <button type="button" class="btn btn-info btn-sm">Contact Us</button>
+    <!-- **** Navbar **** -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand me-1" href="/">
+          <img
+            class="img-fluid dsc-logo"
+            src="/assets/images/dsc_daiict_linear.png"
+          />
         </a>
+
+        <!--Collapse Button-->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-collapsible"
+          aria-controls="#navbar-collapsible"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Collapse Button Ends-->
+
+        <!--Collapsible Content-->
+        <div class="collapse navbar-collapse" id="navbar-collapsible">
+          <ul class="navbar-nav ms-auto">
+            <li class="dropdown nav-item">
+              <a href="/" class="nav-link lg-item"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="./events.html" class="nav-link lg-item"> Events </a>
+            </li>
+            <li class="nav-item">
+              <a href="./team.html" class="nav-link lg-item"> Team </a>
+            </li>
+          </ul>
+        </div>
+        <!--Collapsible Content Ends-->
       </div>
-      <!--Collapsible Content Ends-->
     </nav>
-    <!--Navbar Ends-->
 
-    <!-- ADD YOUR CONTENT HERE-->
-    <body>
-      <div class="bgs view">
-        <div class="mask rgba-black-strong align-items-center">
-          <div class="container">
-            <div class="row vertical-center">
-              <div class="col-md-12 mb-4 white-text text-center">
-                <img src="assets/images/logo.png" class="mx-auto w-75" />
-                <h1
-                  class="display-4 notice align-middle mb-0 pt-md-5 pt-20 wow fadeInDown slow"
+    <!-- **** Hero **** -->
+    <header class="container py-5">
+      <p>&nbsp;</p>
+
+      <div class="row pt-5">
+        <!-- First Column -->
+        <div class="col-lg-6">
+          <p>&nbsp;</p>
+          <h2>Welcome to DSC DA-IICT</h2>
+          <p class="description pt-3">
+            Developer Student Clubs is a Google Developers program for
+            university students to learn software development. We are a group of
+            people enthusiastic about technology, development and open source.
+            We are a group passionate about sharing the same enthusiasm with
+            people who wish to introduce, teach, develop and associate with the
+            very same technology that none of us can live without.
+          </p>
+          <a
+            href="https://dsc.community.dev/dhirubhai-ambani-institute-of-information-communication-technology/"
+          >
+            <button class="btn btn-primary px-4 rounded-pill">Join Us</button>
+          </a>
+        </div>
+
+        <!-- Second Column -->
+        <div class="col-lg-5 ms-auto">
+          <img class="img-fluid" src="assets/images/Homepage/hero.png" />
+        </div>
+      </div>
+    </header>
+
+    <!-- **** Recent events **** -->
+    <!-- Pending -->
+
+    <!-- **** What we do **** -->
+    <section class="container py-5">
+      <div class="row py-5">
+        <div class="col-lg-12 text-center">
+          <h2>What We Do?</h2>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-0 text-center">
+            <img
+              src="/assets/images/Homepage/info.png"
+              alt="info"
+              class="card-img-top border-0"
+            />
+            <div class="card-body">
+              <h4>Info Sessions</h4>
+              <p>
+                Provide a step to step guide sessions on approaching any tech
+                stack or from a range of topics.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-0 text-center">
+            <img
+              src="/assets/images/Homepage/workshop.png"
+              alt="workshop"
+              class="card-img-top border-0"
+            />
+            <div class="card-body">
+              <h4>Hands-on Workshop</h4>
+              <p>
+                The real fun where the members will show you how to proceed on
+                different app creation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-0 text-center">
+            <img
+              src="/assets/images/slop_logo_big.png"
+              alt="SLoP logo"
+              class="card-img-top border-0"
+            />
+            <!-- this logo is suitable for dark mode only, needs to be replaced -->
+            <div class="card-body">
+              <h4>
+                <a
+                  href="https://dsc-slop.github.io"
+                  class="text-decoration-none link-dark"
                 >
-                  Thank You for being a part of SLoP!
-                </h1>
-                <h3 class="mt-4">
-                  Click <a href="https://slop.dscdaiict.in/">here</a> to know
-                  more.
-                </h3>
-              </div>
+                  Semester Long Projects
+                </a>
+              </h4>
+              <p>
+                <a href="https://dsc-slop.github.io">SLoP</a>
+                is an initiative by us to help students to get into Open Source
+                Software world.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="bg1 view">
-        <div class="mask rgba-black-strong align-items-center">
-          <div class="container">
-            <div class="row vertical-center">
-              <div class="col-md-12 mb-4 white-text text-center">
-                <h1
-                  class="display-4 align-middle mb-0 pt-md-5 pt-20 wow fadeInDown slow"
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-0 text-center">
+            <img
+              src="/assets/images/Homepage/medium_logo.png"
+              alt="Medium logo"
+              class="card-img-top border-0"
+            />
+            <div class="card-body">
+              <h4>
+                <a
+                  href="https://medium.com/code-dementia"
+                  class="text-decoration-none link-dark"
                 >
-                  Welcome to DSC DA-IICT
-                </h1>
-                <hr class="hr-light wow fadeIn slow" />
-                <p class="lead wow fadeInUp slow white-text">
-                  We are a group of developers motivated to learn and teach
-                  various aspects of development
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg2 view">
-        <div class="mask rgba-black-strong align-items-center">
-          <div class="container">
-            <div class="row vertical-center">
-              <div class="col-md-6 text-center white-text">
-                <p class="lead wow fadeInLeft slow">
-                  Developer Student Club (DSC) is a Google Developers program
-                  for university students to learn mobile and web development
-                  skills. We are a group of people enthusiastic about
-                  technology, development and open source. We are a group
-                  passionate about sharing the same enthusiasm with people who
-                  wish to introduce, teach, develop and associate with the very
-                  same technology that none of us can live without.
-                </p>
-              </div>
-              <div class="col-md-6">
-                <div
-                  class="embed-responsive embed-responsive-16by9 wow fadeInRight slow"
+                  Code Dementia
+                </a>
+              </h4>
+              <p>
+                We maintain a tech blog
+                <a
+                  href="https://medium.com/code-dementia"
+                  class="font-monospace"
+                  >Code Dementia</a
                 >
-                  <iframe
-                    class="embed-responsive-item"
-                    src="https://www.youtube.com/embed/wTLe8nwJ_Lw"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
+                on Medium, covering beginner to advanced level topics!
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="bg3 view">
-        <div class="mask rgba-black-strong align-items-center">
-          <div class="container">
-            <div class="row vertical-center">
-              <div class="col-md-6 text-center white-text">
-                <h1 class="display-3 wow fadeInDown slow">
-                  A Blog For Developers By Developers
-                </h1>
-                <hr class="hr-light wow fadeIn slow" />
-                <h3 class="h3-responsive mt-4 wow fadeInUp slow">
-                  Code Dementia is a Medium Tech Blog maintained by the DSC
-                  members.
-                </h3>
-              </div>
-              <div class="col-md-6 white-text third">
-                <div class="row d-flex justify-content-center">
-                  <img
-                    src="assets/images/medium.png"
-                    class="img-fluid wow slideInDown slow"
-                    alt="medium logo"
-                  />
-                </div>
-                <div class="row d-flex justify-content-center">
-                  <a
-                    href="https://medium.com/code-dementia"
-                    class="btn btn-outline-white mt-4 wow slideInUp slow"
-                    >Visit Code Dementia</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg4 view">
-        <div class="mask rgba-black-strong align-items-center">
-          <div class="container">
-            <div class="row vertical-center">
-              <div class="col-md-6 text-center white-text">
-                <h1 class="display-2 wow fadeInDown slow">Where To find us?</h1>
-                <hr class="hr-light" />
-                <p class="lead wow fadeInUp slow">
-                  Dhirubhai Ambani Institute of Information and Communication
-                  Technology
-                </p>
-                <p class="lead wow fadeInUp slow">
-                  Near Reliance Chowkdi, DA IICT Road, Gandhinagar, Gujarat
-                  382007
-                </p>
-              </div>
-              <div class="col-md-6 vertical-center wow zoomIn slow">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14669.98850947678!2d72.6290294!3d23.1885469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc54de484f986b1fa!2sDhirubhai+Ambani+Institute+of+Information+and+Communication+Technology!5e0!3m2!1sen!2sin!4v1558894255966!5m2!1sen!2sin"
-                  width="600"
-                  height="450"
-                  frameborder="0"
-                  style="border: 0"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </body>
-    <!--END YOUR CONTENT HERE-->
+    </section>
 
-    <!-- Footer -->
-
-    <footer class="footer-wrapper">
-      <p class="font-weight-bold">Developed with 💙 by the DSC Team</p>
-      <div class="footer-icons container text-center">
-        <a
-          href="https://github.com/ossdaiict"
-          target="_blank"
-          rel="noopener"
-          aria-label="GitHub profile link"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://twitter.com/dscdaiict"
-          target="_blank"
-          rel="noopener"
-          aria-label="Twitter profile link"
-        >
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="https://medium.com/code-dementia"
-          target="_blank"
-          rel="noopener"
-          aria-label="Medium profile link"
-        >
-          <i class="fab fa-medium"></i>
-        </a>
+    <!-- **** Technologies we're excited about **** -->
+    <section class="container py-5">
+      <div class="row py-5">
+        <div class="col-lg-12 text-center">
+          <h2>Technologies we're excited about</h2>
+        </div>
       </div>
-      <p class="copyright-text">© 2020 Developer Student Club, DA-IICT</p>
+      <div class="row justify-content-evenly">
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-0 text-center">
+            <img
+              src="/assets/images/Homepage/web.png"
+              alt="web dev"
+              class="card-img-top border-0"
+            />
+            <div class="card-body">
+              <h4>Web Development</h4>
+              <p>
+                From basic HTML, CSS, JS to complex MERN stack web applications!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-0 text-center">
+            <img
+              src="/assets/images/Homepage/undraw_android_jr64.svg"
+              alt="android logo on a phone screen"
+              class="card-img-top border-0"
+            />
+            <div class="card-body">
+              <h4>Mobile App Development</h4>
+              <p>We ❤️ to make Android and Flutter applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-0 text-center">
+            <img
+              src="/assets/images/Homepage/undraw_cloud_hosting_aodd.svg"
+              alt="A developer showing Heroke, AWS and GCP logos"
+              class="card-img-top border-0"
+            />
+            <div class="card-body">
+              <h4>Cloud Computing</h4>
+              <p>Ready to deploy cloud-native apps with Kubernetes?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card border-0 text-center">
+            <img
+              src="/assets/images/Homepage/ml.png"
+              alt="robot with cloud, chip, gears etc symbols around"
+              class="card-img-top border-0"
+            />
+            <div class="card-body">
+              <h4>Machine Learning</h4>
+              <p>Hello, I'm d-chat-bot. Ask me anything.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- **** Follow us and how to participate in community **** -->
+    <section class="container py-5">
+      <div class="row justify-content-evenly">
+        <div class="col-md-6">
+          <div class="row py-4">
+            <div class="col-lg-12">
+              <h2>How to participate and grow with us?</h2>
+            </div>
+          </div>
+          <div class="row">
+            <ol class="list">
+              <li class="list-item">
+                Follow our social media to stay updated! (links given in the
+                footer :P)
+              </li>
+              <li class="list-item">
+                Join our WhatsApp community group and participate in the
+                discussions. Ask your doubts or share cool stuff!
+              </li>
+              <li class="list-item">
+                Attend our sessions, workshops and programs like SLoP. We
+                provide resources with emails.
+              </li>
+              <li class="list-item">
+                Share your articles with us to publish on
+                <a
+                  href="https://medium.com/code-dementia"
+                  class="font-monospace"
+                  >Code Dementia</a
+                >, and contribute to our GitHub organization
+                <a href="https://github.com/ossdaiict">OSS DA-IICT</a>.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-md-6 my-auto">
+          <img
+            src="/assets/images/Homepage/undraw_stepping_up_g6oo.svg"
+            class="img-fluid mh-vh-50 float-md-end"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- **** Footer **** -->
+    <footer class="container pt-5">
+      <div class="row justify-content-center">
+        <img
+          class="dsc-logo"
+          src="/assets/images/dsc_daiict_linear.png"
+          alt="DSC logo"
+        />
+      </div>
+      <p class="mt-4 text-center">
+        <small>&copy; 2021 Developer Student Club, DA-IICT</small>
+      </p>
     </footer>
 
-    <!-- Footer End -->
+    <!-- Project Ends Here -->
 
-    <!--Project Ends Here-->
-
-    <!-- SCRIPTS -->
-
-    <!-- JQuery -->
+    <!-- Bootstrap JS bundle -->
     <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    ></script>
-    <!-- Bootstrap tooltips -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-    ></script>
-    <!-- Bootstrap core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
-    ></script>
-    <!-- MDB core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
     ></script>
 
     <script type="text/javascript" src="js/script.js"></script>

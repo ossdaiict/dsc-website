@@ -1,200 +1,83 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
-@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
-body,
-html,
-.view {
-  height: 100%;
-}
+/* @import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'); */
 
+/* 
 @media (max-width: 700px) {
-  .notice {
-    margin-top: 32px;
-    font-size: 24px !important;
+   .notice {
+      margin-top: 32px;
+      font-size: 24px !important;
+   }
+} */
+
+body {
+  background: #fafafa;
+  font-family: "Google Sans", sans-serif;
+}
+
+/* ---- Navbar styles ---- */
+.navbar {
+  background-color: #fafafa;
+}
+
+.nav-bg {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  max-width: 80%;
+}
+
+.dsc-logo {
+  max-width: 90%;
+}
+
+@media (min-width: 600px) {
+  .dsc-logo {
+    max-height: 90%;
+    max-width: 400px;
   }
 }
 
-.bg1 {
-  background-image: url('../assets/images/Homepage/2.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.navbar-nav {
+  font-size: 1.125rem;
 }
 
-.bgs {
-  background-image: url('../assets/images/slop-back-mini.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.navbar-expand-lg .collapse:not(.show) .nav-link.lg-item {
+  padding: 1.5rem;
+  /* color: #333; */
 }
 
-.bg2 {
-  background-image: url('../assets/images/Homepage/1.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* .navbar-expand-lg.nav-bg .collapse:not(.show) .nav-link.lg-item {
+   padding-top: 1.125rem;
+   padding-bottom: 1.125rem;
+} */
+
+/* ---- Minor tweaks ---- */
+
+.btn-primary {
+  background-color: #4285f4;
+  border-color: #4285f4;
 }
 
-.bg3 {
-  background-image: url('../assets/images/Homepage/3.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* 400px + 0.125 * (100vw - 400px) */
+/* .description {
+   max-width: calc(12.5vw + 350px); 
+} */
+
+.card {
+  background-color: #fafafa;
 }
 
-.bg4 {
-  background-image: url('../assets/images/Homepage/4.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#events-nav {
-  background-color: #3f51b5 !important;
-}
-h1 {
-  letter-spacing: 2px;
+/* .card img {
+   box-shadow: 0 0 50px 8px rgba(0, 0, 0, 0.03);
+   background-color: #fff;
+} */
+
+.list-item {
+  padding: 0.5rem 1rem 0.5rem 0.25rem;
+  margin-left: 1.5rem;
 }
 
-.top-nav-collapse {
-  background-color: #3f51b5 !important;
-}
-
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #3f51b5 !important;
-  }
-}
-
-.first {
-  margin-top: 200px;
-}
-.second {
-  margin-top: 100px;
-}
-
-.second-img {
-  margin-top: 150px;
-}
-
-.third {
-  margin-top: 100px;
-}
-
-.wow {
-  visibility: hidden;
-}
-
-.vertical-center {
-  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
-}
-
-.cardsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-}
-
-td,
-tr {
-  font-size: 18px !important;
-  font-weight: 300 !important;
-  padding-left: 15px;
-}
-th {
-  font-size: 25px !important;
-  font-weight: 500 !important;
-  padding-left: 15px;
-}
-
-/* *********** Flip Card ************* */
-
-.info-card {
-  float: left;
-  -webkit-perspective: 600px;
-  max-width: 15rem;
-  object-fit: fill;
-}
-
-.front,
-.back {
-  /* background: #FFF; */
-  transition: -webkit-transform 1s;
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-}
-
-.front {
-  position: absolute;
-  overflow: auto;
-  /* z-index: 1; */
-}
-
-.back {
-  /* width: 250px;*/
-  min-height: 330px;
-  -webkit-transform: rotateY(-180deg);
-  background: white;
-  overflow: auto;
-}
-
-.info-card:hover .back {
-  -webkit-transform: rotateY(0);
-}
-
-.info-card:hover .front {
-  -webkit-transform: rotateY(180deg);
-}
-
-.height-issue-solver {
-  min-height: 400px;
-}
-
-.card-text {
-  overflow: auto;
-  max-height: 250px;
-}
-
-/* Social buttons */
-.social {
-  list-style: none;
-  padding: 0px;
-  margin-top: 25px;
-  text-align: center;
-}
-
-.social a {
-  position: relative;
-  display: inline-block;
-  min-width: 40px;
-  padding: 10px 0px;
-  margin: 0px 5px;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 40px;
-}
-
-a.social-icon {
-  text-decoration: none !important;
-  box-shadow: 0px 0px 1px rgb(51, 51, 51);
-  box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
-}
-a.social-icon:hover {
-  color: rgb(255, 255, 255) !important;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+/* ---- Utility ---- */
+.mh-vh-50 {
+  max-height: 50vh;
 }
