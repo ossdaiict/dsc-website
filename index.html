@@ -31,27 +31,6 @@
 
     <!-- Custom style -->
     <link href="css/style.css" rel="stylesheet" />
-    <script>
-      function validateForm() {
-        var nm = document.forms[0]["Name"].value;
-        var mail = document.forms[0]["Email"].value;
-        var msg = document.forms[0]["Message"].value;
-        if (nm == "") {
-          alert("Name must be filled out");
-          return false;
-        }
-
-        if (mail == "") {
-          alert("Email must be filled out");
-          return false;
-        }
-
-        if (msg == "") {
-          alert("Message must be filled out");
-          return false;
-        }
-      }
-    </script>
      
   </head>
 
@@ -415,6 +394,14 @@
                 >
                  <i class="fab fa-medium fa-2x"></i>
                 </a>
+                <a class="text-dark p-2"
+                  href="@dscdaiict"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram profile link"
+                >
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
               </div>
             </div>
             <!-- Grid column -->
@@ -429,12 +416,12 @@
                 value="dsc@daiict.ac.in"
                 />
                 <!-- Email -->
-                <input type="email" id="SenderEmail" name="Email" class="form-control mb-4" placeholder="Your e-mail">
+                <input type="email" id="SenderEmail" name="Email" class="form-control mb-4" placeholder="Your e-mail" required>
             
                 <!-- Password -->
-                <input type="text" id="SenderName" name="Name" class="form-control mb-4" placeholder="Your Name">
+                <input type="text" id="SenderName" name="Name" class="form-control mb-4" placeholder="Your Name" required>
                 <!---->
-                <textarea id="SenderMessage" name="Message" value="Message" class="form-control" size="100" placeholder="Your message"></textarea>
+                <textarea id="SenderMessage" name="Message" value="Message" class="form-control" size="100" placeholder="Your message" required></textarea>
                 <!-- Sign in button -->
                 <button class="btn btn-outline-dark btn-block my-4" type="submit">Submit</button>
                 <input name="formto_redirect" type="hidden" value="">
