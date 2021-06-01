@@ -31,6 +31,28 @@
 
     <!-- Custom style -->
     <link href="css/style.css" rel="stylesheet" />
+    <script>
+      function validateForm() {
+        var nm = document.forms[0]["Name"].value;
+        var mail = document.forms[0]["Email"].value;
+        var msg = document.forms[0]["Message"].value;
+        if (nm == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+
+        if (mail == "") {
+          alert("Email must be filled out");
+          return false;
+        }
+
+        if (msg == "") {
+          alert("Message must be filled out");
+          return false;
+        }
+      }
+    </script>
+     
   </head>
 
   <body>
@@ -336,13 +358,13 @@
           <div class="row">
 
             <!-- Grid column -->
-            <div class="col-md-3 md-3">
+            <div class="col-lg-4 col-sm-6">
 
               <!-- Content -->
               <h5>Important Links</h5>
               <ul class="list-unstyled">
                 <li>
-                  <a class="text-dark p-2" href="">Home</a>
+                  <a class="text-dark p-2" href="/">Home</a>
                 </li>
                 <li>
                   <a class="text-dark p-2" href="./events.html">Events</a>
@@ -355,7 +377,7 @@
             </div>
 
             <!-- Grid column -->
-            <div class="col-md-5 mb-3">
+            <div class="col-lg-4 col-sm-6">
 
             <!-- Links -->
             <h5>Connect with Us</h5>
@@ -397,24 +419,28 @@
             </div>
             <!-- Grid column -->
 
-            <div class="col-md-4 mb-3">
+            <div class="col-lg-4 col-sm-12">
 
               <h5>Contact Us</h5>
-
-              <form class="text-center border border-light p-2" action="#!">
+              <form class="text-center border border-light p-2" action="https://form2channel.com?form=sample" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+                <input
+                type="hidden"
+                name="formto_googlesheets"
+                value="dsc@daiict.ac.in"
+                />
                 <!-- Email -->
-                <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-
+                <input type="email" id="SenderEmail" name="Email" class="form-control mb-4" placeholder="Your e-mail">
+            
                 <!-- Password -->
-                <input type="name" id="defaultLoginFormName" class="form-control mb-4" placeholder="Your Name">
+                <input type="text" id="SenderName" name="Name" class="form-control mb-4" placeholder="Your Name">
                 <!---->
-                <textarea id="defaultLoginFormMessage" class="form-control" size="100" placeholder="Your message"></textarea>
+                <textarea id="SenderMessage" name="Message" value="Message" class="form-control" size="100" placeholder="Your message"></textarea>
                 <!-- Sign in button -->
                 <button class="btn btn-outline-dark btn-block my-4" type="submit">Submit</button>
-
-
+                <input name="formto_redirect" type="hidden" value="">
+              </form>    
+              
             </div>
-            <!-- Grid column -->
 
           </div>
 
@@ -422,7 +448,7 @@
         <!-- Copyright -->
         <hr>
         <p class="mt-4 text-center">
-          <small>&copy; 2021 Developer Student Club, DA-IICT</small>
+          <small>&copy; Developed with 💙 by the DSC Team <br>2021 Developer Student Club, DA-IICT</small>
         </p>
         <!-- Copyright -->
 
