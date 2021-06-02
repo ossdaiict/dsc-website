@@ -409,7 +409,7 @@
             <div class="col-lg-4 col-sm-12">
 
               <h5>Contact Us</h5>
-              <form class="text-center border border-light p-2" action="https://form2channel.com?form=sample" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+              <form class="text-center border border-light p-2" action="https://form2channel.com?form=sample" method="POST" enctype="multipart/form-data">
                 <input
                 type="hidden"
                 name="formto_googlesheets"
@@ -425,7 +425,26 @@
                 <!-- Sign in button -->
                 <button class="btn btn-outline-dark btn-block my-4" type="submit">Submit</button>
                 <input name="formto_redirect" type="hidden" value="">
-              </form>    
+              </form>  
+              
+              <div class="toast hide align-items-center text-white bg-success border-0" id="successToast" role="alert" aria-live="assertive" aria-atomic="true" auto-hide="false">
+                <div class="d-flex">
+                  <div class="toast-body">
+                    Thank you for reaching out to us.
+                  </div>
+                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+              </div>
+    
+              <div class="toast hide align-items-center text-white bg-danger border-0" id="alertToast" role="alert" aria-live="assertive" aria-atomic="true" auto-hide="false">
+                <div class="d-flex">
+                  <div class="toast-body">
+                    Oops! looks like your request encountered some error. 
+                  </div>
+                  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+              </div>
+              
               
             </div>
 
@@ -463,5 +482,44 @@
     ></script>
 
     <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+      const contactForm = document.forms[0];
+  
+      contactForm.addEventListener('submit', function(e){
+        e.preventDefault();
+      
+        fetch('https://showcase.api.linx.twenty57.net/Form2Channel', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body:
+        [
+          {"key":"formto_googlesheet","value":"dsc@daiict.ac.in"},
+          {"key":"Email","value":document.getElementById('SenderEmail').value},
+          {"key":"Name","value":document.getElementById('SenderName').value},
+          {"key":"Message","value":document.getElementById('SenderMessage').value},
+        ]
+        }).then(response => {
+            if (response.ok) {
+              return response.json()
+            } 
+          })
+        .then(data => {
+          if(data.success==true){
+            console.log(data);
+            var s= new bootstrap.Toast(document.getElementById('successToast'));
+            s.show();
+          }
+        })
+        .catch(error => {
+          var errToast = document.getElementById('alertToast');
+          var er = new bootstrap.Toast(errToast);
+          er.show();  
+        });
+      });
+      
+    </script>
   </body>
 </html>
