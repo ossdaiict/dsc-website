@@ -360,7 +360,6 @@
               India
             </li>
           </ul>
-
           <div class="container px-0 mb-4 float-left">
             <a
               class="link-dark p-2"
@@ -444,6 +443,26 @@
               Submit
             </button>
           </form>
+          
+          <div class="toast hide align-items-center text-white bg-success border-0" id="successToast" role="alert" aria-live="assertive" aria-atomic="true" auto-hide="false">
+            <div class="d-flex">
+              <div class="toast-body">
+                Thank you for reaching out to us.
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          </div>
+
+          <div class="toast hide align-items-center text-white bg-danger border-0" id="alertToast" role="alert" aria-live="assertive" aria-atomic="true" auto-hide="false">
+            <div class="d-flex">
+              <div class="toast-body">
+                Oops! looks like your request encountered some error. 
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          </div>
+              
+         </div>
         </div>
       </div>
 
@@ -464,5 +483,67 @@
     ></script>
 
     <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+      const contactForm = document.forms[0];
+      // comments pending
+      contactForm.addEventListener('submit', function(e){
+        e.preventDefault();
+      
+        fetch('https://showcase.api.linx.twenty57.net/Form2Channel', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify([
+            { key: "formto_googlesheets", value: "dsc@daiict.ac.in" },
+            {
+              key: "Email",
+              value: document.getElementById("SenderEmail").value,
+            },
+            {
+              key: "Name",
+              value: document.getElementById("SenderName").value,
+            },
+            {
+              key: "Message",
+              value: document.getElementById("SenderMessage").value,
+            },
+          ]),
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              return Promise.reject({
+                statusText: response.statusText,
+                status: response.status,
+              });
+            }
+          })
+          .then((data) => {
+            if (data.Success == true) {
+              var s = new bootstrap.Toast(
+                document.getElementById("successToast")
+              );
+              s.show();
+            } else {
+              return Promise.reject();
+            }
+          })
+          .catch((error) => {
+            var errToast = document.getElementById("alertToast");
+
+            if (error.status != null) {
+              var errBody = document.querySelector("#alertToast .toast-body");
+              errBody.innerHTML += `${error.status}: ${error.statusText}`;
+            }
+
+            var er = new bootstrap.Toast(errToast);
+            er.show();
+          });
+      });
+      
+    </script>
   </body>
 </html>
