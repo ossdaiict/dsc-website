@@ -81,3 +81,11 @@ body {
 .mh-vh-50 {
   max-height: 50vh;
 }
+
+.h-3r {
+  height: 3rem;
+}
+
+.h-6r {
+  height: 6rem;
+}
