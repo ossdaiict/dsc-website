@@ -1,0 +1,160 @@
+body{
+    margin: 0px auto;
+    width: 100%;
+    font-size: 1 rem;
+  }
+
+  /* Flaired edges */
+  .page-heading{
+      text-align: center;
+      margin-top: 4%;
+      width: 100%;
+  }
+  hr{
+      color: white;
+  }
+  hr.style-three {
+    
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-three:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.teamsbody{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cardcontainer{
+    width: 20%;
+    height: 330px;
+    position: relative;
+    text-align: center;
+    margin: 3%;
+    border-top: 3px solid #ea4335;
+    border-left: 3px solid #fbbc05;
+    border-bottom: 3px solid #34a853;
+    border-right: 3px solid #4285f4;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.hover-section{
+    width: 100%;
+    height:88%;
+
+    
+}
+.hover-section img{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+.social{
+    width: 100%;
+    margin-bottom: 5px;
+    
+}
+
+
+.social a{
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    color: #2c3e50;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.4s;   
+    border-radius: 50%; 
+}
+
+.social a i{
+   
+    margin: 0 5px;
+}
+.social a:hover{
+    background: #2c3e50;
+    color: #f1f1f1;
+    
+}
+.front, .back{
+    width: 100%;
+    height: 88%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 1s linear;
+}
+.front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back{
+    transform: perspective(600px) rotateY(180deg);
+    border-radius: 5%;
+    overflow-y: scroll;
+
+}
+.back-card-heading{
+    margin: 5px;
+}
+.back-card-details{
+    margin-top: 2px;
+    height: 85%;
+    overflow-y: scroll;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 5px;;
+}
+
+.back-card-details::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    }
+    .back::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+        }
+
+.card-heading, .card-text{
+    margin: 4px;
+    font-size: medium;
+}
+
+.hover-section:hover > .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.hover-section:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+@media only screen and (max-width: 524px){
+
+    .cardcontainer{
+        width: 70%;
+        margin: 5px;
+    }
+}
+

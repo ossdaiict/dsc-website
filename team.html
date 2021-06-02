@@ -1,567 +1,711 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DAIICT DSC</title>
-    <link rel="icon" href="assets/images/dsc_logo.png" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    />
+   <head>
+      <meta charset="utf-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>DSC DA-IICT</title>
+      <link rel="icon" href="/assets/images/dsc_symbol_notext.png" />
 
-    <!-- test try to remove square font awesome error -->
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"
-    />
-    <!-- end of test -->
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <!-- Bootstrap core CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Material Design Bootstrap -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css"
-      rel="stylesheet"
-    />
+      <!-- Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      />
+      <!-- Bootstrap core CSS -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+         crossorigin="anonymous"
+      />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+         rel="stylesheet"
+         type="text/css"
+      />
 
-    <!-- Custom style -->
-    <link href="css/style.css" rel="stylesheet" />
-    <style>
-      .my-flex-container-2 {
-        background: rgb(167, 167, 167);
-        border: dotted black 3px;
-        font-size: 100px;
-      }
-      .my-card {
-        max-width: 15rem;
-      }
-      .my-card-image {
-        object-fit: cover;
-        max-height: 220px !important;
-        min-width: 240px !important;
-      }
-      .my-card-body {
-        height: auto;
-        overflow: auto;
-      }
-      .my-card:hover {
-        transition: 0.3s;
-      }
-      .my-flex {
-        display: flex;
-      }
-    </style>
+      <!-- Custom style -->
+      <link href="/css/style.css" rel="stylesheet" />
+      <!-- teams page style-->
+      <link rel="stylesheet" href="css/team.css" />
+   </head>
 
-    <!-- Footer style -->
-    <link rel="stylesheet" href="css/footer.css" />
-  </head>
+   <body>
+      <!-- Start your project here -->
 
-  <body>
-    <!-- Start your project here-->
+      <!-- **** Navbar **** -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+         <div class="container">
+            <a class="navbar-brand me-1" href="/">
+               <img
+                  class="img-fluid dsc-logo"
+                  src="/assets/images/dsc_daiict_linear.png"
+               />
+            </a>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark indigo">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/images/dsc_logo.png" alt="dsc_logo" height="30" />
-      </a>
-      <!--Collapse Button-->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#itemList"
-        aria-controls="itemList"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--Collapse Button Ends-->
+            <!--Collapse Button-->
+            <button
+               class="navbar-toggler border-0"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbar-collapsible"
+               aria-controls="#navbar-collapsible"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Collapse Button Ends-->
 
-      <!--Collapsible Content-->
-      <div class="collapse navbar-collapse" id="itemList">
-        <ul class="navbar-nav mr-auto lighten-1 mx-0 mb-0 mt-1">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="./events.html" class="nav-link">Events</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Team</a>
-          </li>
-        </ul>
-
-        <a href="./contact.html">
-          <button type="button" class="btn btn-info btn-sm">
-            Contact Us
-          </button>
-        </a>
+            <!--Collapsible Content-->
+            <div class="collapse navbar-collapse" id="navbar-collapsible">
+               <ul class="navbar-nav ms-auto">
+                  <li class="dropdown nav-item">
+                     <a href="/" class="nav-link lg-item"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="./events.html" class="nav-link lg-item">
+                        Events
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="./team.html" class="nav-link lg-item"> Team </a>
+                  </li>
+               </ul>
+            </div>
+            <!--Collapsible Content Ends-->
+         </div>
+      </nav>
+      <!-- ADD YOUR CONTENT HERE-->
+      <div class="page-heading">
+        <h1> DSC CORE </h1>
+        <hr class="style-three">
       </div>
-      <!--Collapsible Content Ends-->
-    </nav>
-    <!--Navbar Ends-->
+      <section class="teamsbody">
+        <div class="cardcontainer">
 
-    <nav class="nav grey lighten-4 py-4 d-flex flex-row justify-content-around">
-      <h1 class="h1-responsive ml-3">Core Members</h1>
-    </nav>
+            <div class="hover-section">
+                <div class="front">
+                    <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                    <h3 class="card-heading">Prakhar Agrawal</h3>
+                    <h4 class="card-text">Core DSC</h4>
+                    <p class="card-text">
+                        <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                    </p>
+                </div>
+                <div class="back">
+                    <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                    <p class="back-card-details">
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                    </p>
+                </div>
+            </div>
 
-    <!-- ADD YOUR CONTENT HERE-->
-    <!--Card-->
-    <div class="container">
-      <div
-        class="my-flex d-flex flex-row my-flex-container flex-wrap justify-content-around"
-      >
-        
-        <!-- Card-1 -->
-        <div class="mx-5 my-3 info-card">
-          <div class="my-card">
-            <div class="front border">
-              <img
-                src="assets/images/team/AbhinavRaj.jpeg"
-                class="card-img-top my-card-image"
-                alt="..."
-              />
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Abhinav Raj</strong></h5>
-                <p class="card-text"><strong>Lead, DSC</strong></p>
-                <p class="card-text">
-                  <small class="text-muted">Android Development, ML, Web Design, and Java</small>
-                </p>
-              </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <div class="back border">
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Abhinav Raj</strong></h5>
-                <p class="card-text">
-                  Experienced Developer with a demonstrated history of working
-                  in the information technology and services industry. Skilled
-                  in
-                  <strong>Android Development, ML, Web Design, and Java</strong>
-                  . Strong engineering professional with a BTech focused in
-                  Information and Communication Technology from DA-IICT
-                </p>
-                <div class="social">
-                  <a
-                    href="https://twitter.com/CoderAbhinav"
-                    class="fa fa-twitter"
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/in/abhinav-raj-234497159/"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a
-                    href="https://github.com/abhinavraj23"
-                    class="fa fa-github"
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
-        <!-- EndOF Card-1 -->
-        <!-- Card-1 -->
-        <div class="mx-5 my-3 info-card">
-          <div class="my-card">
-            <div class="front border">
-              <img
-                src="assets/images/team/HarshPatel.jpg"
-                class="card-img-top my-card-image"
-                alt="..."
-              />
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Harsh Patel</strong></h5>
-                <p class="card-text"><strong>Core, DSC</strong></p>
-                <p class="card-text">
-                  <small class="text-muted"
-                    >Android Development, Backend Development, Deep
-                    Learning</small
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="back border">
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Harsh Patel</strong></h5>
-                <p class="card-text">
-                  I am an experienced developer having expertise in the 7eld of
-                  Android Development, Backend Systems Management and Deep
-                  Learning. I also do like to explore Computer Vision and
-                  Machine Learning 7elds. I am also a student developer of
-                  GSoC'17 program.
-                </p>
-                <div class="social">
-                  <a
-                    href="https://twitter.com/harsh_2711"
-                    class="fa fa-twitter"
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/in/harsh-patel-7472a8a1/"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a
-                    href="https://github.com/harsh-2711"
-                    class="fa fa-github"
-                  ></a>
+        <div class="cardcontainer">
+
+            <div class="hover-section">
+                <div class="front">
+                    <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                    <h3 class="card-heading">Prakhar Agrawal</h3>
+                    <h4 class="card-text">Core DSC</h4>
+                    <p class="card-text">
+                        <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                    </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- EndOF Card-1 -->
-        <!-- Card-1 -->
-        <div class="mx-5 my-3 info-card">
-          <div class="my-card">
-            <div class="front border">
-              <img
-                src="assets/images/team/KartikeyaGokhale.jpg"
-                class="card-img-top my-card-image"
-                alt="..."
-              />
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Kartikeya Gokhale</strong></h5>
-                <p class="card-text"><strong>Core, DSC</strong></p>
-                <p class="card-text">
-                  <small class="text-muted">Web Development</small>
-                </p>
-              </div>
-            </div>
-            <div class="back border">
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Kartikeya Gokhale</strong></h5>
-                <p class="card-text">
-                  Software Development Enthusiast. Interested in web
-                  technologies and development. Experienced at front-end web
-                  development and looking forward to back-end opportunities.
-                  Working as a GSoC '19 student developer at Percona and with
-                  Quze in developing solutions in educational space and working
-                  for a force of change.
-                </p>
-                <div class="social">
-                  <a
-                    href="https://twitter.com/kgokhale99"
-                    class="fa fa-twitter"
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/in/k-gokhale/"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a
-                    href="https://github.com/Kartikeya99/"
-                    class="fa fa-github"
-                  ></a>
+                <div class="back">
+                    <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                    <p class="back-card-details">
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                    </p>
                 </div>
-              </div>
             </div>
-          </div>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
         </div>
-        <!-- EndOF Card-1 -->
-        <!-- Card-1 -->
-        <div class="mx-5 my-3 info-card height-issue-solver">
-          <div class="my-card">
-            <div class="front border">
-              <img
-                src="assets/images/team/SmitShah.JPG"
-                class="card-img-top my-card-image"
-                alt="..."
-              />
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Smit Shah</strong></h5>
-                <p class="card-text"><strong>Core, DSC</strong></p>
-                <p class="card-text">
-                  <small class="text-muted">Machine Learning</small>
-                </p>
-              </div>
-            </div>
-            <div class="back border">
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Smit Shah</strong></h5>
-                <p class="card-text">
-                  Machine learning and Deep learning enthusiast. Love working
-                  with different technologies and exploring math.
-                </p>
-                <div class="social">
-                  <a
-                    href="https://twitter.com/smit2k14"
-                    class="fa fa-twitter"
-                  ></a>
-                  <a
-                    href="https://linkedin.com/in/smitshah2k"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a
-                    href="https://github.com/smit2k14"
-                    class="fa fa-github"
-                  ></a>
+        <div class="cardcontainer">
+
+            <div class="hover-section">
+                <div class="front">
+                    <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                    <h3 class="card-heading">Prakhar Agrawal</h3>
+                    <h4 class="card-text">Core DSC</h4>
+                    <p class="card-text">
+                        <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                    </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- EndOF Card-1 -->
-        <!-- Card-1 -->
-        <div class="mx-5 my-3 info-card height-issue-solver">
-          <div class="my-card">
-            <div class="front border">
-              <img
-                src="assets/images/team/RhythmPatel.png"
-                class="card-img-top my-card-image"
-                alt="..."
-              />
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Rhythm Patel</strong></h5>
-                <p class="card-text"><strong>Developer, DSC</strong></p>
-                <p class="card-text">
-                  <small class="text-muted">C++, HTML5, CSS3, JavaScript</small>
-                </p>
-              </div>
-            </div>
-            <div class="back border">
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Rhythm Patel</strong></h5>
-                <p class="card-text">
-                  I have worked with HTML, CSS and JavaScript for my projects
-                  and regularly practice competitive programming. I am the
-                  webmaster of IEEE IAS DA-IICT SB.
-                </p>
-                <div class="social">
-                  <a
-                    href="https://twitter.com/prhythm3099"
-                    class="fa fa-twitter"
-                  ></a>
-                  <a
-                    href="http://www.linkedin.com/in/rhythm-patel-300499"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a
-                    href="https://github.com/rhythm-3099"
-                    class="fa fa-github"
-                  ></a>
+                <div class="back">
+                    <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                    <p class="back-card-details">
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                    </p>
                 </div>
-              </div>
             </div>
-          </div>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
         </div>
-        <!-- EndOF Card-1 -->
-      </div>
+        <div class="cardcontainer">
+
+            <div class="hover-section">
+                <div class="front">
+                    <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                    <h3 class="card-heading">Prakhar Agrawal</h3>
+                    <h4 class="card-text">Core DSC</h4>
+                    <p class="card-text">
+                        <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                    </p>
+                </div>
+                <div class="back">
+                    <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                    <p class="back-card-details">
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                    </p>
+                </div>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+        </div>
+        <div class="cardcontainer">
+
+            <div class="hover-section">
+                <div class="front">
+                    <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                    <h3 class="card-heading">Prakhar Agrawal</h3>
+                    <h4 class="card-text">Core DSC</h4>
+                    <p class="card-text">
+                        <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                    </p>
+                </div>
+                <div class="back">
+                    <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                    <p class="back-card-details">
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                    </p>
+                </div>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+        </div>
+        <div class="cardcontainer">
+
+            <div class="hover-section">
+                <div class="front">
+                    <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                    <h3 class="card-heading">Prakhar Agrawal</h3>
+                    <h4 class="card-text">Core DSC</h4>
+                    <p class="card-text">
+                        <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                    </p>
+                </div>
+                <div class="back">
+                    <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                    <p class="back-card-details">
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                        Experienced Developer with a demonstrated history of working
+                        in the information technology and services industry. Skilled in
+                        <strong>Android Development, ML, Web Design, and Java</strong>
+                        . Strong engineering professional with a BTech focused in
+                        Information and Communication Technology from DA-IICT.
+                    </p>
+                </div>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <div class="page-heading">
+      <h1> DSC TEAM </h1>
+      <hr class="style-three">
     </div>
+    <section class="teamsbody">
+      <div class="cardcontainer">
 
-    <!--/.Card-->
-
-    <nav class="nav grey lighten-4 py-4 d-flex flex-row justify-content-around">
-      <h1 class="h1-responsive ml-3">Team Members</h1>
-    </nav>
-    <div class="container">
-      <div
-        class="d-flex flex-row my-flex-container flex-wrap justify-content-around"
-      > 
-        <!-- Card-1 -->
-        <div class="mx-5 my-3 info-card height-issue-solver">
-          <div class="my-card">
-            <div class="front border">
-              <img
-                src="assets/images/team/HemantJain.jpg"
-                class="card-img-top my-card-image"
-                alt="..."
-              />
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Hemant Jain</strong></h5>
-                <p class="card-text"><strong>Developer, DSC</strong></p>
-                <p class="card-text">
-                  <small class="text-muted">Python, Django</small>
-                </p>
+          <div class="hover-section">
+              <div class="front">
+                  <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                  <h3 class="card-heading">Prakhar Agrawal</h3>
+                  <h4 class="card-text">Core DSC</h4>
+                  <p class="card-text">
+                      <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                  </p>
               </div>
-            </div>
-            <div class="back border">
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Hemant Jain</strong></h5>
-                <p class="card-text">
-                  Web Developer with expertise in Python & Django
-                </p>
-                <div class="social">
-                  <a
-                    href="https://twitter.com/HMTJ99"
-                    class="fa fa-twitter"
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/in/hemant-jain-b24394193/"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a href="https://github.com/hmtj99" class="fa fa-github"></a>
-                </div>
+              <div class="back">
+                  <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                  <p class="back-card-details">
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                  </p>
               </div>
-            </div>
           </div>
+
+          <div class="social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+      </div>
+      <div class="cardcontainer">
+
+          <div class="hover-section">
+              <div class="front">
+                  <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                  <h3 class="card-heading">Prakhar Agrawal</h3>
+                  <h4 class="card-text">Core DSC</h4>
+                  <p class="card-text">
+                      <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                  </p>
+              </div>
+              <div class="back">
+                  <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                  <p class="back-card-details">
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                  </p>
+              </div>
+          </div>
+
+          <div class="social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+      </div>
+      <div class="cardcontainer">
+
+          <div class="hover-section">
+              <div class="front">
+                  <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                  <h3 class="card-heading">Prakhar Agrawal</h3>
+                  <h4 class="card-text">Core DSC</h4>
+                  <p class="card-text">
+                      <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                  </p>
+              </div>
+              <div class="back">
+                  <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                  <p class="back-card-details">
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                  </p>
+              </div>
+          </div>
+
+          <div class="social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+      </div>
+      <div class="cardcontainer">
+
+          <div class="hover-section">
+              <div class="front">
+                  <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                  <h3 class="card-heading">Prakhar Agrawal</h3>
+                  <h4 class="card-text">Core DSC</h4>
+                  <p class="card-text">
+                      <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                  </p>
+              </div>
+              <div class="back">
+                  <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                  <p class="back-card-details">
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                  </p>
+              </div>
+          </div>
+
+          <div class="social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+      </div>
+      <div class="cardcontainer">
+
+          <div class="hover-section">
+              <div class="front">
+                  <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                  <h3 class="card-heading">Prakhar Agrawal</h3>
+                  <h4 class="card-text">Core DSC</h4>
+                  <p class="card-text">
+                      <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                  </p>
+              </div>
+              <div class="back">
+                  <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                  <p class="back-card-details">
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                  </p>
+              </div>
+          </div>
+
+          <div class="social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+      </div>
+      <div class="cardcontainer">
+
+          <div class="hover-section">
+              <div class="front">
+                  <img src="assets/images/team/PrakharAgrawal.jpg" alt="Profile Pic" \>
+                  <h3 class="card-heading">Prakhar Agrawal</h3>
+                  <h4 class="card-text">Core DSC</h4>
+                  <p class="card-text">
+                      <small class="technical-stack">C++, Python, HTML5, CSS3, JS</small>
+                  </p>
+              </div>
+              <div class="back">
+                  <h4 class="back-card-heading">Prakhar Agrawal</h4>
+                  <p class="back-card-details">
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                      Experienced Developer with a demonstrated history of working
+                      in the information technology and services industry. Skilled in
+                      <strong>Android Development, ML, Web Design, and Java</strong>
+                      . Strong engineering professional with a BTech focused in
+                      Information and Communication Technology from DA-IICT.
+                  </p>
+              </div>
+          </div>
+
+          <div class="social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+      </div>
+  </section>
+      <!--END YOUR CONTENT HERE-->
+
+      <!--Footer-->
+      <!-- TO DO -->
+      <footer class="page-footer font-small white pt-4">
+        <div class="row justify-content-center">
+          <img
+            class="dsc-logo"
+            src="/assets/images/dsc_daiict_linear.png"
+            alt="DSC logo"/>
         </div>
-        <!-- EndOF Card-1 -->
-        <!-- Card-1 -->
-        <div class="mx-5 my-3 info-card height-issue-solver">
-          <div class="my-card">
-            <div class="front border">
-              <img
-                src="assets/images/team/MeetPatel.jpg"
-                class="card-img-top my-card-image"
-                alt="..."
-              />
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Meet Patel</strong></h5>
-                <p class="card-text"><strong>Developer, DSC</strong></p>
-                <p class="card-text">
-                  <small class="text-muted"
-                    >Python, NodeJS, Django</small
+  
+          <!-- Footer Links -->
+          <div class="container-fluid text-md-left p-5">
+  
+            <!-- Grid row -->
+            <div class="row">
+  
+              <!-- Grid column -->
+              <div class="col-lg-4 col-sm-6">
+  
+                <!-- Content -->
+                <h5>Important Links</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-dark p-2" href="/">Home</a>
+                  </li>
+                  <li>
+                    <a class="text-dark p-2" href="./events.html">Events</a>
+                  </li>
+                  <li>
+                    <a class="text-dark p-2" href="./team.html">Team</a>
+                  </li>
+                </ul>
+  
+              </div>
+  
+              <!-- Grid column -->
+              <div class="col-lg-4 col-sm-6">
+  
+              <!-- Links -->
+              <h5>Connect with Us</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="far fa-envelope p-2"></i> dsc@daiict.ac.in
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt p-2"></i> Gandhinagar, Gujarat, India
+                </li>
+              </ul>
+  
+                <div class="footer-icons container float-left">
+                  <a class="text-dark p-2"
+                    href="https://github.com/ossdaiict"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub profile link"
                   >
-                </p>
-              </div>
-            </div>
-            <div class="back border">
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Meet Patel</strong></h5>
-                <p class="card-text">
-                  Software Development Enthusiast. Interested in Web
-                  infrastructure. Experienced in web development with
-                  <strong>Django, JavaScript & NodeJS</strong>.
-                </p>
-                <div class="social">
-                  <a
-                    href="https://twitter.com/Meet100Patel"
-                    class="fa fa-twitter"
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/in/meet100patel/"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a
-                    href="https://github.com/meet59patel"
-                    class="fa fa-github"
-                  ></a>
+                    <i class="fab fa-github fa-2x"></i>
+                  </a>
+                  <a class="text-dark p-2"
+                    href="https://twitter.com/dscdaiict"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Twitter profile link"
+                  >
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                  <a class="text-dark p-2"
+                    href="https://medium.com/code-dementia"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Medium profile link"
+                  >
+                   <i class="fab fa-medium fa-2x"></i>
+                  </a>
+                  <a class="text-dark p-2"
+                    href="https://www.instagram.com/dscdaiict/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram profile link"
+                  >
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- EndOF Card-1 -->
-        <!-- Card-1 -->
-        <div class="mx-5 my-3 info-card height-issue-solver">
-          <div class="my-card">
-            <div class="front border">
-              <img
-                src="assets/images/team/HiteshGoyal.jpeg"
-                class="card-img-top my-card-image"
-                alt="..."
-              />
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Hitesh Goyal</strong></h5>
-                <p class="card-text"><strong>Developer, DSC</strong></p>
-                <p class="card-text">
-                  <small class="text-muted">NodeJs, Python</small>
-                </p>
+              <!-- Grid column -->
+  
+              <div class="col-lg-4 col-sm-12">
+  
+                <h5>Contact Us</h5>
+                <form class="text-center border border-light p-2" action="https://form2channel.com?form=sample" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+                  <input
+                  type="hidden"
+                  name="formto_googlesheets"
+                  value="dsc@daiict.ac.in"
+                  />
+                  <!-- Email -->
+                  <input type="email" id="SenderEmail" name="Email" class="form-control mb-4" placeholder="Your e-mail" required>
+              
+                  <!-- Password -->
+                  <input type="text" id="SenderName" name="Name" class="form-control mb-4" placeholder="Your Name" required>
+                  <!---->
+                  <textarea id="SenderMessage" name="Message" value="Message" class="form-control" size="100" placeholder="Your message" required></textarea>
+                  <!-- Sign in button -->
+                  <button class="btn btn-outline-dark btn-block my-4" type="submit">Submit</button>
+                  <input name="formto_redirect" type="hidden" value="">
+                </form>    
+                
               </div>
+  
             </div>
-            <div class="back border">
-              <div class="card-body my-card-body">
-                <h5 class="card-title"><strong>Hitesh Goyal</strong></h5>
-                <p class="card-text">
-                  Web developer with experience in NodeJs & Python.
-                </p>
-                <div class="social">
-                  <a href="#" class="fa fa-twitter"></a>
-                  <a
-                    href="https://www.linkedin.com/in/hitgo"
-                    class="fa fa-linkedin"
-                  ></a>
-                  <a href="https://github.com/hitgo00" class="fa fa-github"></a>
-                </div>
-              </div>
-            </div>
+  
           </div>
-        </div>
-        <!-- EndOF Card-1 -->
-      </div>
-    </div>
+          <!-- Copyright -->
+          <hr>
+          <p class="mt-4 text-center">
+            <small>&copy; Developed with 💙 by the DSC Team <br>2021 Developer Student Club, DA-IICT</small>
+          </p>
+          <!-- Copyright -->
+  
+        </footer>
 
-    <!--END YOUR CONTENT HERE-->
+      <!-- Project Ends Here -->
 
-    <!-- Footer -->
+      <!-- Bootstrap JS bundle -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+         crossorigin="anonymous"
+      ></script>
 
-    <footer class="footer-wrapper">
-      <p class="font-weight-bold">
-        Developed with 💙 by the DSC Team
-      </p>
-      <div class=" footer-icons container text-center">
-        <a
-          href="https://github.com/ossdaiict"
-          target="_blank"
-          rel="noopener"
-          aria-label="GitHub profile link"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://twitter.com/dscdaiict"
-          target="_blank"
-          rel="noopener"
-          aria-label="Twitter profile link"
-        >
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="https://medium.com/code-dementia"
-          target="_blank"
-          rel="noopener"
-          aria-label="Medium profile link"
-        >
-          <i class="fab fa-medium"></i>
-        </a>
-      </div>
-      <p class="copyright-text">
-        © 2019 Developer Student Club, DA-IICT
-      </p>
-    </footer>
-
-    <!-- Footer End -->
-
-    <!--Project Ends Here-->
-
-    <!-- SCRIPTS -->
-
-    <!-- JQuery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    ></script>
-    <!-- Bootstrap tooltips -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-    ></script>
-    <!-- Bootstrap core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
-    ></script>
-    <!-- MDB core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"
-    ></script>
-  </body>
+      <script type="text/javascript" src="/js/script.js"></script>
+   </body>
 </html>
