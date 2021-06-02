@@ -486,7 +486,7 @@
 
     <script>
       const contactForm = document.forms[0];
-  
+      // comments pending
       contactForm.addEventListener('submit', function(e){
         e.preventDefault();
       
@@ -495,30 +495,53 @@
         headers: {
           'Content-Type': 'application/json'
         },
-        body:
-        [
-          {"key":"formto_googlesheet","value":"dsc@daiict.ac.in"},
-          {"key":"Email","value":document.getElementById('SenderEmail').value},
-          {"key":"Name","value":document.getElementById('SenderName').value},
-          {"key":"Message","value":document.getElementById('SenderMessage').value},
-        ]
-        }).then(response => {
-            if (response.ok) {
-              return response.json()
-            } 
-          })
-        .then(data => {
-          if(data.success==true){
-            console.log(data);
-            var s= new bootstrap.Toast(document.getElementById('successToast'));
-            s.show();
-          }
+        body: JSON.stringify([
+            { key: "formto_googlesheets", value: "dsc@daiict.ac.in" },
+            {
+              key: "Email",
+              value: document.getElementById("SenderEmail").value,
+            },
+            {
+              key: "Name",
+              value: document.getElementById("SenderName").value,
+            },
+            {
+              key: "Message",
+              value: document.getElementById("SenderMessage").value,
+            },
+          ]),
         })
-        .catch(error => {
-          var errToast = document.getElementById('alertToast');
-          var er = new bootstrap.Toast(errToast);
-          er.show();  
-        });
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              return Promise.reject({
+                statusText: response.statusText,
+                status: response.status,
+              });
+            }
+          })
+          .then((data) => {
+            if (data.Success == true) {
+              var s = new bootstrap.Toast(
+                document.getElementById("successToast")
+              );
+              s.show();
+            } else {
+              return Promise.reject();
+            }
+          })
+          .catch((error) => {
+            var errToast = document.getElementById("alertToast");
+
+            if (error.status != null) {
+              var errBody = document.querySelector("#alertToast .toast-body");
+              errBody.innerHTML += `${error.status}: ${error.statusText}`;
+            }
+
+            var er = new bootstrap.Toast(errToast);
+            er.show();
+          });
       });
       
     </script>
