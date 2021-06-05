@@ -7,8 +7,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DAIICT DSC</title>
-    <link rel="icon" href="assets/images/dsc_logo.png" />
+    <title>DSC DA-IICT</title>
+    <link rel="icon" href="/assets/images/dsc_symbol_notext.png" />
 
     <!-- Font Awesome -->
     <link
@@ -17,415 +17,487 @@
     />
     <!-- Bootstrap core CSS -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
     />
-    <!-- Material Design Bootstrap -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
+      type="text/css"
     />
 
-    <style>
-      .event-card {
-        max-width: 20rem;
-        object-fit: fill;
-      }
-      .event-card img {
-        object-fit: cover;
-        max-height: 19rem;
-      }
-      .card-text {
-        display: auto;
-        max-height: 5rem;
-      }
-      .my-flex {
-        display: flex;
-      }
-      #event1 {
-        display: contents;
-      }
-    </style>
-
-    <!-- Footer style -->
-    <link rel="stylesheet" href="css/footer.css" />
+    <!-- Custom style -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <!-- events page style-->
+    <link rel="stylesheet" href="css/events.css" />
   </head>
 
   <body>
-    <!-- Start your project here-->
+    <!-- Start your project here -->
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark indigo" id="events-nav">
-      <a class="navbar-brand" href="./index.html">
-        <img src="assets/images/dsc_logo.png" alt="dsc_logo" height="30" />
-      </a>
-      <!--Collapse Button-->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#itemList"
-        aria-controls="itemList"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--Collapse Button Ends-->
-
-      <!--Collapsible Content-->
-      <div class="collapse navbar-collapse" id="itemList">
-        <ul class="navbar-nav mr-auto lighten-1 mx-0 mb-0 mt-1">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">Events</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="./team.html" class="nav-link">Team</a>
-          </li>
-        </ul>
-
-        <a href="./contact.html">
-          <button type="button" class="btn btn-info btn-sm">
-            Contact Us
-          </button>
+    <!-- **** Navbar **** -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand me-1" href="/">
+          <img
+            class="img-fluid dsc-logo"
+            src="/assets/images/dsc_daiict_linear.png"
+          />
         </a>
-      </div>
-      <!--Collapsible Content Ends-->
-    </nav>
-    <!--Navbar Ends-->
 
+        <!--Collapse Button-->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-collapsible"
+          aria-controls="#navbar-collapsible"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Collapse Button Ends-->
+
+        <!--Collapsible Content-->
+        <div class="collapse navbar-collapse" id="navbar-collapsible">
+          <ul class="navbar-nav ms-auto">
+            <li class="dropdown nav-item">
+              <a href="/" class="nav-link lg-item"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="./events.html" class="nav-link lg-item"> Events </a>
+            </li>
+            <li class="nav-item">
+              <a href="./team.html" class="nav-link lg-item"> Team </a>
+            </li>
+          </ul>
+        </div>
+        <!--Collapsible Content Ends-->
+      </div>
+    </nav>
     <!-- ADD YOUR CONTENT HERE-->
 
-    <!--Carousel Wrapper-->
-    <div
-      id="carousel-groupphotos"
-      class="carousel slide carousel-fade mx-auto d-block col-md-8 mh-100"
-      data-interval="3000"
-      data-ride="carousel"
-      style="overflow: hidden;"
-    >
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carousel-groupphotos"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carousel-groupphotos" data-slide-to="1"></li>
-        <li data-target="#carousel-groupphotos" data-slide-to="2"></li>
-      </ol>
-      <!--/.Indicators-->
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox" style="overflow: hidden;">
-        <!--First slide-->
-        <div class="carousel-item active">
-          <img
-            class="d-block w-100"
-            src="assets/images/events/1.jpg"
-            alt="First slide"
-          />
+    <section class="teamsbody">
+      <div class="cardcontainer">
+        <div class="hover-section">
+          <div class="front">
+            <img
+              src="https://dsc-slop.github.io/assets/slop.svg"
+              alt="Profile Pic"
+              \
+            />
+            <h3 class="card-heading">SLoP</h3>
+            <h4 class="card-text">National Event</h4>
+            <p class="card-text">
+              <small class="technical-stack"
+                >28th August - 23rd November 2020</small
+              >
+            </p>
+          </div>
+          <div class="back">
+            <h4 class="back-card-heading">Prakhar Agrawal</h4>
+            <p class="back-card-details">
+              Experienced Developer with a demonstrated history of working in
+              the information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT.
+            </p>
+          </div>
         </div>
-        <!--/First slide-->
-        <!--Second slide-->
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="assets/images/events/2.jpg"
-            alt="Second slide"
-          />
-        </div>
-        <!--/Second slide-->
-        <!--Third slide-->
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="assets/images/events/3.jpg"
-            alt="Third slide"
-          />
-        </div>
-        <!--/Third slide-->
       </div>
-      <!--/.Slides-->
-      <!--Controls-->
-      <a
-        class="carousel-control-prev"
-        href="#carousel-groupphotos"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carousel-groupphotos"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
-    </div>
-    <!--/.Carousel Wrapper-->
+      <div class="cardcontainer">
+        <div class="hover-section">
+          <div class="front">
+            <img
+              src="assets/images/events/card/GitHub_Logo.png"
+              alt="GitHub Logo"
+              \
+            />
+            <h3 class="card-heading">Session on Git</h3>
+            <h4 class="card-text">Intra College Session</h4>
+            <p class="card-text">
+              <small class="technical-stack">8th December 2020</small>
+            </p>
+          </div>
+          <div class="back">
+            <h4 class="back-card-heading">Prakhar Agrawal</h4>
+            <p class="back-card-details">
+              Experienced Developer with a demonstrated history of working in
+              the information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cardcontainer">
+        <div class="hover-section">
+          <div class="front">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/85/GSoC-icon.svg"
+              alt="GSoC logo"
+              \
+            />
+            <h3 class="card-heading">GSoC and OSS</h3>
+            <h4 class="card-text">Intra College Session</h4>
+            <p class="card-text">
+              <small class="technical-stack">23rd January 2021</small>
+            </p>
+          </div>
+          <div class="back">
+            <h4 class="back-card-heading">Prakhar Agrawal</h4>
+            <p class="back-card-details">
+              Experienced Developer with a demonstrated history of working in
+              the information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cardcontainer">
+        <div class="hover-section">
+          <div class="front">
+            <img
+              src="https://udayskai.netlify.app/static/media/Group%2055.f66e3d84.svg"
+              alt="Web Dev pic"
+              \
+            />
+            <h3 class="card-heading">Web Devlopment Road Map</h3>
+            <h4 class="card-text">Intra College Session</h4>
+            <p class="card-text">
+              <small class="technical-stack">3rd February 2021</small>
+            </p>
+          </div>
+          <div class="back">
+            <h4 class="back-card-heading">Prakhar Agrawal</h4>
+            <p class="back-card-details">
+              Experienced Developer with a demonstrated history of working in
+              the information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cardcontainer">
+        <div class="hover-section">
+          <div class="front">
+            <img
+              src="https://www.oppia.org/build/assets/images/logo/288x288_logo_mint.063a7696413a2520fb2fed8a9c77fba4.webp"
+              alt="Oppia Logo"
+              \
+            />
+            <h3 class="card-heading">Oppia With Rajat Talesra</h3>
+            <h4 class="card-text">Intra College Session</h4>
+            <p class="card-text">
+              <small class="technical-stack">11th February 2021</small>
+            </p>
+          </div>
+          <div class="back">
+            <h4 class="back-card-heading">Prakhar Agrawal</h4>
+            <p class="back-card-details">
+              Experienced Developer with a demonstrated history of working in
+              the information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cardcontainer">
+        <div class="hover-section">
+          <div class="front">
+            <img
+              src="https://qph.fs.quoracdn.net/main-qimg-357f02231aed5b6a7c815c576b09b29f"
+              alt="Android Studio logo"
+              \
+            />
+            <h3 class="card-heading">Android Development</h3>
+            <h4 class="card-text">Intra College Session</h4>
+            <p class="card-text">
+              <small class="technical-stack">19th March 2021</small>
+            </p>
+          </div>
+          <div class="back">
+            <h4 class="back-card-heading">Prakhar Agrawal</h4>
+            <p class="back-card-details">
+              Experienced Developer with a demonstrated history of working in
+              the information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <nav class="nav grey lighten-4 py-4 d-flex flex-row justify-content-around">
-      <h1 class="h1-responsive ml-3">Upcoming Events</h1>
-    </nav>
-    <!-- <h3 class="h3-responsive ml-3">Upcoming</h3>-->
+      <div class="cardcontainer">
+        <div class="hover-section">
+          <div class="front">
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/07-design-and-development/rest-api.png"
+              alt="REST API logo"
+              \
+            />
+            <h3 class="card-heading">REST APIs</h3>
+            <h4 class="card-text">Intra College Session</h4>
+            <p class="card-text">
+              <small class="technical-stack">13th April 2021</small>
+            </p>
+          </div>
+          <div class="back">
+            <h4 class="back-card-heading">Prakhar Agrawal</h4>
+            <p class="back-card-details">
+              Experienced Developer with a demonstrated history of working in
+              the information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT. Experienced
+              Developer with a demonstrated history of working in the
+              information technology and services industry. Skilled in
+              <strong>Android Development, ML, Web Design, and Java</strong>
+              . Strong engineering professional with a BTech focused in
+              Information and Communication Technology from DA-IICT.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--END YOUR CONTENT HERE-->
 
-    <div class="container">
-      <div
-        class="my-flex d-flex flex-row my-flex-container flex-wrap justify-content-around"
-      >
-        <!-- event 1 -->
-         <div id="event1">
-          <div class="card event-card my-3">
-            <img
-              src="assets/images/dsc_logo.png"
-              class="card-img-top border-dark"
-            />
-            <div class="card-body">
-              <h4 class="card-title">To be announced!</h4>
-              <p class="card-text" style="max-height: 15rem;">
-                
-              </p>
-              <p class="card-date">
-                <!-- <i class="fas fa-calendar mr-2"></i>.. -->
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- end of event1 -->
+    <!--Footer-->
+    <!-- TO DO -->
+    <footer class="page-footer font-small white pt-4">
+      <div class="row justify-content-center">
+        <img
+          class="dsc-logo"
+          src="/assets/images/dsc_daiict_linear.png"
+          alt="DSC logo"
+        />
       </div>
-    </div>
 
-    <nav class="nav grey lighten-4 py-4 d-flex flex-row justify-content-around">
-      <h1 class="h1-responsive ml-3">Previous Events</h1>
-    </nav>
+      <!-- Footer Links -->
+      <div class="container-fluid text-md-left p-5">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-lg-4 col-sm-6">
+            <!-- Content -->
+            <h5>Important Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-dark p-2" href="/">Home</a>
+              </li>
+              <li>
+                <a class="text-dark p-2" href="./events.html">Events</a>
+              </li>
+              <li>
+                <a class="text-dark p-2" href="./team.html">Team</a>
+              </li>
+            </ul>
+          </div>
 
-    <div class="container">
-      <div
-        class="my-flex d-flex flex-row my-flex-container flex-wrap justify-content-around"
-      >
-        <!-- event 1 -->
-        <div id="event1">
-          <div class="card event-card my-3">
-            <img
-              src="assets/images/events/card/Web-Scraping.png"
-              class="card-img-top border-dark" width="5rem"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Web Scraping Session</h4>
-              <p class="card-text" style="max-height: 15rem;">
-                A session on Web Scraping was successfully conducted in which students learnt to leverage the power of python to obtain data from web. Interactive hands-on session was followed by a small competition with goodies and prizes to winners!
-                
-              </p>
-              <p class="card-date">
-                <i class="fas fa-calendar mr-2"></i>11 Feb,2020
-              </p>
-            </div>
-          </div> 
-        </div>
-        <div id="event1">
-          <div class="card event-card my-3">
-            <img
-              src="assets/images/events/card/git.png"
-              class="card-img-top border-dark" height="200px"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Git/GitHub Session</h4>
-              <p class="card-text" style="height: 10rem;">
-              Full house session on Git and Github. Students learnt about basics of Git using Command Line Interface.Open source development was introduced and many participants made their first pull request in the interactive session.
-              </p><br><br><br>
-              <p class="card-date">
-                <i class="fas fa-calendar mr-2"></i>16 Jan,2020
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="event1">
-          <div class="card event-card my-3">
-            <img
-              src="assets/images/events/card/OSS.png"
-              class="card-img-top border-dark"
-            />
-            <div class="card-body">
-              <h4 class="card-title">GSoC, Outreachy and OSS</h4>
-              <p class="card-text">
-                <strong>Talks by GSoCers and Outreachy students</strong>,
-                Introduction to the
-                <strong>Open Source Software</strong> community of DA-IICT
-                alongside a brief introduction to Hacktoberfest
-              </p>
-              <p class="card-date">
-                <i class="fas fa-calendar mr-2"></i>16 Oct, 2019
-              </p>
+          <!-- Grid column -->
+          <div class="col-lg-4 col-sm-6">
+            <!-- Links -->
+            <h5>Connect with Us</h5>
+            <ul class="list-unstyled">
+              <li><i class="far fa-envelope p-2"></i> dsc@daiict.ac.in</li>
+              <li>
+                <i class="fas fa-map-marker-alt p-2"></i> Gandhinagar, Gujarat,
+                India
+              </li>
+            </ul>
+
+            <div class="footer-icons container float-left">
+              <a
+                class="text-dark p-2"
+                href="https://github.com/ossdaiict"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub profile link"
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a
+                class="text-dark p-2"
+                href="https://twitter.com/dscdaiict"
+                target="_blank"
+                rel="noopener"
+                aria-label="Twitter profile link"
+              >
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+              <a
+                class="text-dark p-2"
+                href="https://medium.com/code-dementia"
+                target="_blank"
+                rel="noopener"
+                aria-label="Medium profile link"
+              >
+                <i class="fab fa-medium fa-2x"></i>
+              </a>
+              <a
+                class="text-dark p-2"
+                href="https://www.instagram.com/dscdaiict/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram profile link"
+              >
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
             </div>
           </div>
-        </div>
-        <!-- end of event1 -->
-        <!-- event 1 -->
-        <div id="event1">
-          <div class="card event-card my-3">
-            <img
-              src="assets/images/events/card/djangogrls.png"
-              class="card-img-top border-dark"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Django Girls, Gandhinagar</h4>
-              <p class="card-text">
-                <strong>Build your first website.</strong> It is a full-day
-                workshop with opportunity to network with other DevFest and
-                iFest attendees.
-              </p>
-              <p class="card-date">
-                <i class="fas fa-calendar mr-2"></i>13 Oct, 2019
-              </p>
-            </div>
+          <!-- Grid column -->
+
+          <div class="col-lg-4 col-sm-12">
+            <h5>Contact Us</h5>
+            <form
+              class="text-center border border-light p-2"
+              action="https://form2channel.com?form=sample"
+              method="POST"
+              enctype="multipart/form-data"
+              onsubmit="return validateForm()"
+            >
+              <input
+                type="hidden"
+                name="formto_googlesheets"
+                value="dsc@daiict.ac.in"
+              />
+              <!-- Email -->
+              <input
+                type="email"
+                id="SenderEmail"
+                name="Email"
+                class="form-control mb-4"
+                placeholder="Your e-mail"
+                required
+              />
+
+              <!-- Password -->
+              <input
+                type="text"
+                id="SenderName"
+                name="Name"
+                class="form-control mb-4"
+                placeholder="Your Name"
+                required
+              />
+              <!---->
+              <textarea
+                id="SenderMessage"
+                name="Message"
+                value="Message"
+                class="form-control"
+                size="100"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <!-- Sign in button -->
+              <button class="btn btn-outline-dark btn-block my-4" type="submit">
+                Submit
+              </button>
+              <input name="formto_redirect" type="hidden" value="" />
+            </form>
           </div>
         </div>
-        <!-- end of event1 -->
-        <!-- event 1 -->
-        <div id="event1">
-          <div class="card event-card my-3">
-            <img
-              src="assets/images/events/card/webdev.jpeg"
-              class="card-img-top border-dark"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Introduction to Web Development</h4>
-              <p class="card-text" style="max-height: 15rem;">
-                A session on web technologies and terms related to web
-                development and how to get started in web development with a
-                concrete plan that you can follow to start creating your own web
-                apps, We will start with the very basics and explain to you the
-                various paths you can take towards your web development career
-                and the things you need to learn.
-              </p>
-              <p class="card-date">
-                <i class="fas fa-calendar mr-2"></i>25 Sept, 2019
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- end of event1 -->
-        <!-- event 1 -->
-        <div id="event1">
-          <div class="card event-card my-3">
-            <img
-              src="assets/images/events/card/dscorientation.png"
-              class="card-img-top border-dark"
-            />
-            <div class="card-body">
-              <h4 class="card-title">DSC DA-IICT Orientation</h4>
-              <p class="card-text" style="max-height: 15rem;">
-                An orientation session for DA-IICT introducing the club and its
-                activities to the new fresher batch and while at it teach how to
-                make a website using plain old HTML/CSS and maybe even a little
-                JavaScript.
-              </p>
-              <p class="card-date">
-                <i class="fas fa-calendar mr-2"></i>13th August, 2019
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- end of event1 -->
-        <!-- event 1 -->
-        <div id="event1">
-          <div class="card event-card my-3">
-            <img
-              src="assets/images/events/card/summer.png"
-              class="card-img-top border-dark"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Summer Planning Session</h4>
-              <p class="card-text" style="max-height: 15rem;">
-                A session on the pathway required for embarking upon the journey
-                of Machine Learning and Web Development. Discussions on a lot of
-                different things like the resources you should learn from, the
-                different types of projects you should work on etc.
-              </p>
-              <p class="card-date">
-                <i class="fas fa-calendar mr-2"></i>16th April, 2019
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- end of event1 -->
       </div>
-    </div>
-
-    <!-- Footer -->
-
-    <footer class="footer-wrapper">
-      <p class="font-weight-bold">
-        Developed with 💙 by the DSC Team
+      <!-- Copyright -->
+      <hr />
+      <p class="mt-4 text-center">
+        <small
+          >&copy; Developed with 💙 by t2021 Developer Student Club,
+          DA-IICT</small
+        >
       </p>
-      <div class=" footer-icons container text-center">
-        <a
-          href="https://github.com/ossdaiict"
-          target="_blank"
-          rel="noopener"
-          aria-label="GitHub profile link"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://twitter.com/dscdaiict"
-          target="_blank"
-          rel="noopener"
-          aria-label="Twitter profile link"
-        >
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="https://medium.com/code-dementia"
-          target="_blank"
-          rel="noopener"
-          aria-label="Medium profile link"
-        >
-          <i class="fab fa-medium"></i>
-        </a>
-      </div>
-      <p class="copyright-text">
-        © 2019 Developer Student Club, DA-IICT
-      </p>
+      <!-- Copyright -->
     </footer>
 
-    <!-- Footer End -->
+    <!-- Project Ends Here -->
 
-    <!--Project Ends Here-->
+    <!-- Bootstrap JS bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    ></script>
-    <!-- Bootstrap tooltips -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-    ></script>
-    <!-- Bootstrap core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
-
-    ></script>
-    <!-- MDB core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"
-    ></script>
+    <script type="text/javascript" src="/js/script.js"></script>
   </body>
 </html>
