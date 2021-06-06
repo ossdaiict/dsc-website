@@ -22,6 +22,7 @@
          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
          crossorigin="anonymous"
       />
+      <!-- Google Sans fonts -->
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
          href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
@@ -32,17 +33,18 @@
       <!-- Custom style -->
       <link href="/css/style.css" rel="stylesheet" />
    </head>
-
+   
    <body>
       <!-- Start your project here -->
-
+    
       <!-- **** Navbar **** -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-light">
          <div class="container">
-            <a class="navbar-brand me-1" href="/">
+            <a class="navbar-brand me-1" href="/" aria-label="Go to homepage">
                <img
                   class="img-fluid dsc-logo"
                   src="/assets/images/dsc_daiict_linear.png"
+                  alt="DSC DA-IICT logo"
                />
             </a>
 
@@ -102,145 +104,194 @@
       <h1>Add Your Stuff Here</h1>
       <!--END YOUR CONTENT HERE-->
 
-      <!--Footer-->
+      <!-- **** Footer **** -->
       <footer class="container pt-5">
          <div class="row justify-content-center">
             <img
                class="dsc-logo"
                src="/assets/images/dsc_daiict_linear.png"
-               alt="DSC logo"
+               alt="DSC DA-IICT logo"
             />
          </div>
 
          <!-- Footer content -->
          <div class="row text-md-left py-5">
-               <!-- Grid column 1 -->
-               <div class="col-lg-4 col-md-3 col-sm-6">
-                  <!-- Content -->
-                  <h5>Important Links</h5>
-                  <ul class="list-unstyled">
-                     <li>
-                        <a class="link-dark p-2" href="/">Home</a>
-                     </li>
-                     <li>
-                        <a class="link-dark p-2" href="/events.html">Events</a>
-                     </li>
-                     <li>
-                        <a class="link-dark p-2" href="/team.html">Team</a>
-                     </li>
-                  </ul>
+            <!-- Grid column 1 -->
+            <div class="col-lg-4 col-md-3 col-sm-6">
+               <!-- Content -->
+               <h5>Important Links</h5>
+               <ul class="list-unstyled">
+                  <li>
+                     <a class="link-dark p-2" href="/">Home</a>
+                  </li>
+                  <li>
+                     <a class="link-dark p-2" href="/events.html">Events</a>
+                  </li>
+                  <li>
+                     <a class="link-dark p-2" href="/team.html">Team</a>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Grid column 2 -->
+            <div class="col-md-4 col-sm-6">
+               <!-- Links -->
+               <h5>Connect with Us</h5>
+               <ul class="list-unstyled">
+                  <li><i class="far fa-envelope p-2"></i> dsc@daiict.ac.in</li>
+                  <li>
+                     <i class="fas fa-map-marker-alt p-2"></i> Gandhinagar,
+                     Gujarat, India
+                  </li>
+               </ul>
+               <div class="container px-0 mb-4 float-left">
+                  <a
+                     class="link-dark p-2 text-decoration-none"
+                     href="https://github.com/ossdaiict"
+                     target="_blank"
+                     rel="noopener"
+                     aria-label="GitHub profile link"
+                  >
+                     <i class="fab fa-github fa-2x"></i>
+                  </a>
+                  <a
+                     class="link-dark p-2 text-decoration-none"
+                     href="https://twitter.com/dscdaiict"
+                     target="_blank"
+                     rel="noopener"
+                     aria-label="Twitter profile link"
+                  >
+                     <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                  <a
+                     class="link-dark p-2 text-decoration-none"
+                     href="https://medium.com/code-dementia"
+                     target="_blank"
+                     rel="noopener"
+                     aria-label="Medium profile link"
+                  >
+                     <i class="fab fa-medium fa-2x"></i>
+                  </a>
+                  <a
+                     class="link-dark p-2 text-decoration-none"
+                     href="https://www.instagram.com/dscdaiict/"
+                     target="_blank"
+                     rel="noopener"
+                     aria-label="Instagram profile link"
+                  >
+                     <i class="fab fa-instagram fa-2x"></i>
+                  </a>
                </div>
+            </div>
 
-               <!-- Grid column 2 -->
-               <div class="col-md-4 col-sm-6">
-                  <!-- Links -->
-                  <h5>Connect with Us</h5>
-                  <ul class="list-unstyled">
-                     <li>
-                        <i class="far fa-envelope p-2"></i> dsc@daiict.ac.in
-                     </li>
-                     <li>
-                        <i class="fas fa-map-marker-alt p-2"></i> Gandhinagar,
-                        Gujarat, India
-                     </li>
-                  </ul>
+            <!-- Grid column 3 -->
+            <div class="col-lg-4 col-md-5">
+               <h5>Contact Us</h5>
+               <form
+                  class="text-center py-2"
+                  action="https://form2channel.com?form=contact"
+                  method="POST"
+                  enctype="multipart/form-data"
+               >
+                  <!-- form2channel setup -->
+                  <input
+                     type="hidden"
+                     name="formto_googlesheets"
+                     value="dsc@daiict.ac.in"
+                  />
+                  <input
+                     type="email"
+                     id="SenderEmail"
+                     name="Email"
+                     class="form-control mb-3 h-3r"
+                     placeholder="Your e-mail"
+                     required
+                  />
+                  <input
+                     type="text"
+                     id="SenderName"
+                     name="Name"
+                     class="form-control mb-3 h-3r"
+                     placeholder="Your Name"
+                     required
+                  />
+                  <textarea
+                     id="SenderMessage"
+                     name="Message"
+                     class="form-control h-6r"
+                     placeholder="Your message"
+                     required
+                  ></textarea>
 
-                  <div class="container px-0 mb-4 float-left">
-                     <a
-                        class="link-dark p-2"
-                        href="https://github.com/ossdaiict"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="GitHub profile link"
-                     >
-                        <i class="fab fa-github fa-2x"></i>
-                     </a>
-                     <a
-                        class="link-dark p-2"
-                        href="https://twitter.com/dscdaiict"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Twitter profile link"
-                     >
-                        <i class="fab fa-twitter fa-2x"></i>
-                     </a>
-                     <a
-                        class="link-dark p-2"
-                        href="https://medium.com/code-dementia"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Medium profile link"
-                     >
-                        <i class="fab fa-medium fa-2x"></i>
-                     </a>
-                     <a
-                        class="link-dark p-2"
-                        href="https://www.instagram.com/dscdaiict/"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Instagram profile link"
-                     >
-                        <i class="fab fa-instagram fa-2x"></i>
-                     </a>
+                  <button
+                     class="btn btn-outline-dark btn-block my-4"
+                     type="submit"
+                  >
+                     Submit
+                  </button>
+               </form>
+               <!-- hidden toasts -->
+               <div
+                  class="
+                     toast
+                     hide
+                     align-items-center
+                     text-white
+                     bg-success
+                     border-0
+                  "
+                  id="successToast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+               >
+                  <div class="d-flex">
+                     <div class="toast-body">
+                        Thank you for reaching out to us.
+                     </div>
+                     <button
+                        type="button"
+                        class="btn-close btn-close-white me-2 m-auto"
+                        data-bs-dismiss="toast"
+                        aria-label="Close"
+                     ></button>
                   </div>
                </div>
 
-               <!-- Grid column 3 -->
-               <div class="col-lg-4 col-md-5">
-                  <h5>Contact Us</h5>
-                  <form
-                     class="text-center py-2"
-                     action="https://form2channel.com?form=contact"
-                     method="POST"
-                     enctype="multipart/form-data"
-                  >
-                     <!-- form2channel setup -->
-                     <input
-                        type="hidden"
-                        name="formto_googlesheets"
-                        value="dsc@daiict.ac.in"
-                     />
-                     <input
-                        type="email"
-                        id="SenderEmail"
-                        name="Email"
-                        class="form-control mb-3 h-3r"
-                        placeholder="Your e-mail"
-                        required
-                     />
-                     <input
-                        type="text"
-                        id="SenderName"
-                        name="Name"
-                        class="form-control mb-3 h-3r"
-                        placeholder="Your Name"
-                        required
-                     />
-                     <textarea
-                        id="SenderMessage"
-                        name="Message"
-                        class="form-control h-6r"
-                        placeholder="Your message"
-                        required
-                     ></textarea>
-
+               <div
+                  class="
+                     toast
+                     hide
+                     align-items-center
+                     text-white
+                     bg-danger
+                     border-0
+                  "
+                  id="alertToast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+               >
+                  <div class="d-flex">
+                     <div class="toast-body">
+                        <!-- available error status will be added here by the script -->
+                        Oops! looks like your request encountered some error.
+                     </div>
                      <button
-                        class="btn btn-outline-dark btn-block my-4"
-                        type="submit"
-                     >
-                        Submit
-                     </button>
-                  </form>
+                        type="button"
+                        class="btn-close btn-close-white me-2 m-auto"
+                        data-bs-dismiss="toast"
+                        aria-label="Close"
+                     ></button>
+                  </div>
                </div>
             </div>
          </div>
-         
+
          <hr />
          <!-- Copyright -->
          <p class="mt-4 text-center">
-            <small
-               >&copy; 2021 Developer Student Club, DA-IICT</small
-            >
+            <small>&copy; 2021 Developer Student Club, DA-IICT</small>
          </p>
       </footer>
 
@@ -253,6 +304,7 @@
          crossorigin="anonymous"
       ></script>
 
-      <script type="text/javascript" src="/js/script.js"></script>
+      <script type="text/javascript" src="/js/navbar.js"></script>
+      <script type="text/javascript" src="/js/footer.js"></script>
    </body>
 </html>

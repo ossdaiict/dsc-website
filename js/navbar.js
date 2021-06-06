@@ -1,5 +1,4 @@
-// new WOW().init();
-
+// add box-shadow to navbar after the page is scrolled 100px vertically
 document.addEventListener("scroll", function () {
   let nav = document.querySelector(".navbar");
 

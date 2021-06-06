@@ -7,8 +7,12 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DSC DA-IICT</title>
-    <link rel="icon" href="assets/images/dsc_symbol_notext.png" />
+    <title>Home | DSC DA-IICT</title>
+    <meta
+      name="description"
+      content="Landing page of Developer Student Club, DA-IICT"
+    />
+    <link rel="icon" href="/assets/images/dsc_symbol_notext.png" />
 
     <!-- Font Awesome -->
     <link
@@ -22,6 +26,7 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <!-- Google Sans fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
@@ -30,7 +35,7 @@
     />
 
     <!-- Custom style -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -39,10 +44,11 @@
     <!-- **** Navbar **** -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand me-1" href="/">
+        <a class="navbar-brand me-1" href="/" aria-label="Go to homepage">
           <img
             class="img-fluid dsc-logo"
             src="/assets/images/dsc_daiict_linear.png"
+            alt="DSC DA-IICT logo"
           />
         </a>
 
@@ -104,7 +110,11 @@
 
         <!-- Second Column -->
         <div class="col-lg-5 ms-auto">
-          <img class="img-fluid" src="assets/images/Homepage/hero.png" />
+          <img
+            class="img-fluid"
+            src="/assets/images/Homepage/hero.png"
+            alt="illustration showing diversity in people and various google developer technologies"
+          />
         </div>
       </div>
     </header>
@@ -315,6 +325,7 @@
           <img
             src="/assets/images/Homepage/undraw_stepping_up_g6oo.svg"
             class="img-fluid mh-vh-50 float-md-end"
+            alt="a man walking up the steps"
           />
         </div>
       </div>
@@ -326,7 +337,7 @@
         <img
           class="dsc-logo"
           src="/assets/images/dsc_daiict_linear.png"
-          alt="DSC logo"
+          alt="DSC DA-IICT logo"
         />
       </div>
 
@@ -362,7 +373,7 @@
           </ul>
           <div class="container px-0 mb-4 float-left">
             <a
-              class="link-dark p-2"
+              class="link-dark p-2 text-decoration-none"
               href="https://github.com/ossdaiict"
               target="_blank"
               rel="noopener"
@@ -371,7 +382,7 @@
               <i class="fab fa-github fa-2x"></i>
             </a>
             <a
-              class="link-dark p-2"
+              class="link-dark p-2 text-decoration-none"
               href="https://twitter.com/dscdaiict"
               target="_blank"
               rel="noopener"
@@ -380,7 +391,7 @@
               <i class="fab fa-twitter fa-2x"></i>
             </a>
             <a
-              class="link-dark p-2"
+              class="link-dark p-2 text-decoration-none"
               href="https://medium.com/code-dementia"
               target="_blank"
               rel="noopener"
@@ -389,7 +400,7 @@
               <i class="fab fa-medium fa-2x"></i>
             </a>
             <a
-              class="link-dark p-2"
+              class="link-dark p-2 text-decoration-none"
               href="https://www.instagram.com/dscdaiict/"
               target="_blank"
               rel="noopener"
@@ -443,26 +454,45 @@
               Submit
             </button>
           </form>
-          
-          <div class="toast hide align-items-center text-white bg-success border-0" id="successToast" role="alert" aria-live="assertive" aria-atomic="true" auto-hide="false">
+          <!-- hidden toasts -->
+          <div
+            class="toast hide align-items-center text-white bg-success border-0"
+            id="successToast"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
             <div class="d-flex">
-              <div class="toast-body">
-                Thank you for reaching out to us.
-              </div>
-              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              <div class="toast-body">Thank you for reaching out to us.</div>
+              <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
             </div>
           </div>
 
-          <div class="toast hide align-items-center text-white bg-danger border-0" id="alertToast" role="alert" aria-live="assertive" aria-atomic="true" auto-hide="false">
+          <div
+            class="toast hide align-items-center text-white bg-danger border-0"
+            id="alertToast"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
             <div class="d-flex">
               <div class="toast-body">
-                Oops! looks like your request encountered some error. 
+                <!-- available error status will be added here by the script -->
+                Oops! looks like your request encountered some error.
               </div>
-              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
             </div>
           </div>
-              
-         </div>
         </div>
       </div>
 
@@ -482,68 +512,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script type="text/javascript" src="js/script.js"></script>
-
-    <script>
-      const contactForm = document.forms[0];
-      // comments pending
-      contactForm.addEventListener('submit', function(e){
-        e.preventDefault();
-      
-        fetch('https://showcase.api.linx.twenty57.net/Form2Channel', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify([
-            { key: "formto_googlesheets", value: "dsc@daiict.ac.in" },
-            {
-              key: "Email",
-              value: document.getElementById("SenderEmail").value,
-            },
-            {
-              key: "Name",
-              value: document.getElementById("SenderName").value,
-            },
-            {
-              key: "Message",
-              value: document.getElementById("SenderMessage").value,
-            },
-          ]),
-        })
-          .then((response) => {
-            if (response.ok) {
-              return response.json();
-            } else {
-              return Promise.reject({
-                statusText: response.statusText,
-                status: response.status,
-              });
-            }
-          })
-          .then((data) => {
-            if (data.Success == true) {
-              var s = new bootstrap.Toast(
-                document.getElementById("successToast")
-              );
-              s.show();
-            } else {
-              return Promise.reject();
-            }
-          })
-          .catch((error) => {
-            var errToast = document.getElementById("alertToast");
-
-            if (error.status != null) {
-              var errBody = document.querySelector("#alertToast .toast-body");
-              errBody.innerHTML += `${error.status}: ${error.statusText}`;
-            }
-
-            var er = new bootstrap.Toast(errToast);
-            er.show();
-          });
-      });
-      
-    </script>
+    <script type="text/javascript" src="/js/navbar.js"></script>
+    <script type="text/javascript" src="/js/footer.js"></script>
   </body>
 </html>
