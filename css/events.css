@@ -41,32 +41,7 @@ body {
   border-top-left-radius: 5%;
 }
 
-.social {
-  width: 100%;
-  margin-bottom: 5px;
-}
 
-.social a {
-  display: inline-flex;
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 5px;
-  color: #2c3e50;
-  font-size: 18px;
-  text-decoration: none;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-.social a i {
-  margin: 0 5px;
-}
-.social a:hover {
-  background: #2c3e50;
-  color: #f1f1f1;
-}
 .front,
 .back {
   width: 100%;
@@ -107,7 +82,7 @@ body {
 
 .card-heading,
 .card-text {
-  margin: 4px;
+  margin: 8px;
   font-size: medium;
 }
 
@@ -118,9 +93,20 @@ body {
   transform: perspective(600px) rotateY(0deg);
 }
 
-@media only screen and (max-width: 524px) {
+@media only screen and (max-width: 540px) {
   .cardcontainer {
     width: 70%;
     margin: 5px;
+  }
+}
+@media only screen and (max-width: 769px){
+
+  .teamsbody{
+    margin-top: 13%;
+  }
+  .cardcontainer{
+    width: 40%;
+    margin: 3%;
+    
   }
 }

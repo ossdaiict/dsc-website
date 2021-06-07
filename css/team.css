@@ -7,8 +7,11 @@ body{
   /* Flaired edges */
   .page-heading{
       text-align: center;
-      margin-top: 4%;
+      margin-top: 9%;
       width: 100%;
+  }
+  .page-heading h1{
+      color: #2e2f30c5;
   }
   hr{
       color: white;
@@ -150,11 +153,26 @@ hr.style-three:before { /* Not really supposed to work, but does */
     transform: perspective(600px) rotateY(0deg);
 }
 
-@media only screen and (max-width: 524px){
+@media only screen and (max-width: 540px){
 
+    .page-heading{
+        margin-top: 19%;
+    }
     .cardcontainer{
         width: 70%;
         margin: 5px;
     }
 }
+@media only screen and (max-width: 769px){
+
+    .page-heading{
+      margin-top: 13%;
+    }
+    .cardcontainer{
+      width: 40%;
+      margin: 3%;
+      
+    }
+  }
+  
 
