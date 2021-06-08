@@ -107,6 +107,7 @@ hr.style-three:before { /* Not really supposed to work, but does */
     width: 100%;
     height: 88%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     position: absolute;
     transition: transform 1s linear;
 }
