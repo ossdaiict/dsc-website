@@ -13,7 +13,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 6%;
+  margin-top: 9%;
 }
 
 .cardcontainer {
@@ -93,13 +93,16 @@ body {
   transform: perspective(600px) rotateY(0deg);
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 426px) {
+  .teamsbody{
+    margin-top: 20%;
+  }
   .cardcontainer {
     width: 70%;
     margin: 5px;
   }
 }
-@media only screen and (max-width: 769px){
+@media only screen and (min-width: 427px) and (max-width: 769px){
 
   .teamsbody{
     margin-top: 13%;

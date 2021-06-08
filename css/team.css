@@ -153,7 +153,7 @@ hr.style-three:before { /* Not really supposed to work, but does */
     transform: perspective(600px) rotateY(0deg);
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 426px){
 
     .page-heading{
         margin-top: 19%;
@@ -163,7 +163,7 @@ hr.style-three:before { /* Not really supposed to work, but does */
         margin: 5px;
     }
 }
-@media only screen and (max-width: 769px){
+@media only screen and (min-width: 427px) and (max-width: 769px){
 
     .page-heading{
       margin-top: 13%;
