@@ -35,7 +35,9 @@ body {
   height: 88%;
 }
 .hover-section img {
-  width: 100%;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   height: 200px;
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
