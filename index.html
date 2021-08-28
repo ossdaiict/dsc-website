@@ -29,7 +29,7 @@
     <!-- Google Sans fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap"
       rel="stylesheet"
       type="text/css"
     />
@@ -132,11 +132,29 @@
       <div class="row justify-content-evenly">
         <div class="col-lg-3 col-sm-6">
           <div class="card border-0 text-center">
-            <img
-              src="/assets/images/Homepage/info.png"
-              alt="info"
-              class="card-img-top border-0"
-            />
+            <picture class="card-img-top border-0">
+              <source 
+                type="image/avif"
+                sizes="100vw"
+                srcset="/assets/images/Homepage/info-1200.avif 1200w, 
+                /assets/images/Homepage/info-600.avif 600w, 
+                /assets/images/Homepage/info-400.avif 400w, 
+                /assets/images/Homepage/info-300.avif 300w">
+              <img 
+                alt="info"
+                src="/assets/images/Homepage/info-1200.png" 
+                srcset="/assets/images/Homepage/info-1200.png 1200w, 
+                /assets/images/Homepage/info-600.png 600w, 
+                /assets/images/Homepage/info-400.png 400w, 
+                /assets/images/Homepage/info-300.png 300w"
+                sizes="100vw"
+                loading="lazy"
+                decoding="async"
+                height="900"
+                width="1200"
+                style="content-visibility: auto; max-width: 100%; height: auto;" />
+            </picture>
+
             <div class="card-body">
               <h4>Info Sessions</h4>
               <p>
@@ -149,11 +167,27 @@
 
         <div class="col-lg-3 col-sm-6">
           <div class="card border-0 text-center">
-            <img
-              src="/assets/images/Homepage/workshop.png"
-              alt="workshop"
-              class="card-img-top border-0"
-            />
+            <picture class="card-img-top border-0">
+              <source 
+                type="image/avif"
+                sizes="100vw"
+                srcset="/assets/images/Homepage/workshop-1200.avif 1200w, 
+                /assets/images/Homepage/workshop-600.avif 600w, 
+                /assets/images/Homepage/workshop-400.avif 400w, 
+                /assets/images/Homepage/workshop-300.avif 300w">
+              <img 
+                alt="workshop"
+                src="/assets/images/Homepage/info-1200.png" 
+                srcset="/assets/images/Homepage/workshop-1200.png 1200w, 
+                /assets/images/Homepage/workshop-600.png 600w, 
+                /assets/images/Homepage/workshop-400.png 400w, 
+                /assets/images/Homepage/workshop-300.png 300w"
+                sizes="100vw"
+                loading="lazy"
+                decoding="async"
+                height="900"
+                width="1200"
+                style="content-visibility: auto; max-width: 100%; height: auto;" />
             <div class="card-body">
               <h4>Hands-on Workshop</h4>
               <p>
@@ -167,7 +201,7 @@
         <div class="col-lg-3 col-sm-6">
           <div class="card border-0 text-center">
             <img
-              src="/assets/images/slop_logo_big.png"
+              src="/assets/images/Homepage/slop.svg"
               alt="SLoP logo"
               class="card-img-top border-0"
             />
@@ -193,7 +227,7 @@
         <div class="col-lg-3 col-sm-6">
           <div class="card border-0 text-center">
             <img
-              src="/assets/images/Homepage/medium_logo.png"
+              src="/assets/images/Homepage/medium.svg"
               alt="Medium logo"
               class="card-img-top border-0"
             />
@@ -232,8 +266,10 @@
         <div class="col-lg-3 col-sm-6">
           <div class="card border-0 text-center">
             <img
-              src="/assets/images/Homepage/web.png"
+              src="/assets/images/Homepage/webdev.svg"
               alt="web dev"
+              loading="lazy"
+              decoding="async"
               class="card-img-top border-0"
             />
             <div class="card-body">
@@ -275,6 +311,8 @@
             <img
               src="/assets/images/Homepage/ml.png"
               alt="robot with cloud, chip, gears etc symbols around"
+              loading="lazy"
+              decoding="async"
               class="card-img-top border-0"
             />
             <div class="card-body">
@@ -498,8 +536,9 @@
 
       <hr />
       <!-- Copyright -->
-      <p class="mt-4 text-center">
-        <small>&copy; 2021 Developer Student Club, DA-IICT</small>
+      <p class="mt-4 mb-0 row justify-content-between">
+        <small class="col">&copy; 2021 Developer Student Club, DA-IICT</small>
+        <small class="col text-end">Illustration from <a href="https://storyset.com/">Storyset</a></small>
       </p>
     </footer>
 
