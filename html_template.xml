@@ -1,146 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DAIICT DSC</title>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    />
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+   <head>
+      <meta charset="utf-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>DSC DA-IICT</title>
+      <link rel="icon" href="/assets/images/dsc_symbol_notext.png" />
 
-  <body>
-    <!-- Start your project here-->
+      <!-- Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      />
+      <!-- Bootstrap core CSS -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+         crossorigin="anonymous"
+      />
+      <!-- Google Sans fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+         rel="stylesheet"
+         type="text/css"
+      />
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/dsc_logo.png" alt="dsc_logo" height="30" />
-      </a>
-      <!--Collapse Button-->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#itemList"
-        aria-controls="itemList"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--Collapse Button Ends-->
-
-      <!--Collapsible Content-->
-      <div class="collapse navbar-collapse" id="itemList">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="events.html" class="nav-link">Events</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="team.html" class="nav-link">Team</a>
-          </li>
-        </ul>
-
-        <button type="button" class="btn btn-info btn-sm">
-          <a href="contact.html">Contact Us</a>
-        </button>
-      </div>
-      <!--Collapsible Content Ends-->
-    </nav>
-    <!--Navbar Ends-->
-
-    <!-- ADD YOUR CONTENT HERE-->
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <h1>Add Your Stuff Here</h1>
-    <!--END YOUR CONTENT HERE-->
-
-    <!--Footer Starts Here-->
-    <footer class="page-footer font-small grey lighten-4">
-      <div class="container-fluid text-center text-md-left">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="text-muted">DSC DA-IICT</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <a href="#" class="text-muted">Blog - Code Dementia</a>
-          </div>
-        </div>
-
-        <br />
-        <!--Icons For Footer-->
-        <div class="row">
-          <div class="col-md-6">
-            <a class="fb-ic">
-              <i class="fab fa-facebook-f grey-text fa-lg mr-2"></i>
+      <!-- Custom style -->
+      <link href="/css/style.css" rel="stylesheet" />
+   </head>
+   
+   <body>
+      <!-- Start your project here -->
+    
+      <!-- **** Navbar **** -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+         <div class="container">
+            <a class="navbar-brand me-1" href="/" aria-label="Go to homepage">
+               <img
+                  class="img-fluid dsc-logo"
+                  src="/assets/images/dsc_daiict_linear.png"
+                  alt="DSC DA-IICT logo"
+               />
             </a>
-            <a class="medium-ic" href="https://medium.com/code-dementia">
-              <i class="fab fa-medium-m grey-text fa-lg mr-2"></i>
-            </a>
-            <a class="github-ic" href="https://github.com/dscdaiict">
-              <i class="fab fa-github grey-text fa-lg"></i>
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!--Copyright Text-->
-      <div class="footer-copyright py-2">
-        <div class="container-fluid text-center text-md-left">
-          © 2019 Google Developers
-        </div>
-      </div>
-    </footer>
-    <!--Footer Ends Here-->
+            <!--Collapse Button-->
+            <button
+               class="navbar-toggler border-0"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbar-collapsible"
+               aria-controls="#navbar-collapsible"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Collapse Button Ends-->
 
-    <!--Project Ends Here-->
+            <!--Collapsible Content-->
+            <div class="collapse navbar-collapse" id="navbar-collapsible">
+               <ul class="navbar-nav ms-auto">
+                  <li class="dropdown nav-item">
+                     <a href="/" class="nav-link lg-item"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="./events.html" class="nav-link lg-item">
+                        Events
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="./team.html" class="nav-link lg-item"> Team </a>
+                  </li>
+               </ul>
+            </div>
+            <!--Collapsible Content Ends-->
+         </div>
+      </nav>
+      <!-- ADD YOUR CONTENT HERE-->
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <h1>Add Your Stuff Here</h1>
+      <!--END YOUR CONTENT HERE-->
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-  </body>
+      <!-- **** Footer **** -->
+      <footer class="container pt-5">
+         <div class="row justify-content-center">
+            <img
+               class="dsc-logo"
+               src="/assets/images/dsc_daiict_linear.png"
+               alt="DSC DA-IICT logo"
+            />
+         </div>
+
+         <!-- Footer content -->
+         <div class="row text-md-left py-5">
+            <!-- Grid column 1 -->
+            <div class="col-lg-4 col-md-3 col-sm-6">
+               <!-- Content -->
+               <h5>Important Links</h5>
+               <ul class="list-unstyled">
+                  <li>
+                     <a class="link-dark p-2" href="/">Home</a>
+                  </li>
+                  <li>
+                     <a class="link-dark p-2" href="/events.html">Events</a>
+                  </li>
+                  <li>
+                     <a class="link-dark p-2" href="/team.html">Team</a>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Grid column 2 -->
+            <div class="col-md-4 col-sm-6">
+               <!-- Links -->
+               <h5>Connect with Us</h5>
+               <ul class="list-unstyled">
+                  <li><i class="far fa-envelope p-2"></i> dsc@daiict.ac.in</li>
+                  <li>
+                     <i class="fas fa-map-marker-alt p-2"></i> Gandhinagar,
+                     Gujarat, India
+                  </li>
+               </ul>
+               <div class="container px-0 mb-4 float-left">
+                  <a
+                     class="link-dark p-2 text-decoration-none"
+                     href="https://github.com/ossdaiict"
+                     target="_blank"
+                     rel="noopener"
+                     aria-label="GitHub profile link"
+                  >
+                     <i class="fab fa-github fa-2x"></i>
+                  </a>
+                  <a
+                     class="link-dark p-2 text-decoration-none"
+                     href="https://twitter.com/dscdaiict"
+                     target="_blank"
+                     rel="noopener"
+                     aria-label="Twitter profile link"
+                  >
+                     <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                  <a
+                     class="link-dark p-2 text-decoration-none"
+                     href="https://medium.com/code-dementia"
+                     target="_blank"
+                     rel="noopener"
+                     aria-label="Medium profile link"
+                  >
+                     <i class="fab fa-medium fa-2x"></i>
+                  </a>
+                  <a
+                     class="link-dark p-2 text-decoration-none"
+                     href="https://www.instagram.com/dscdaiict/"
+                     target="_blank"
+                     rel="noopener"
+                     aria-label="Instagram profile link"
+                  >
+                     <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Grid column 3 -->
+            <div class="col-lg-4 col-md-5">
+               <h5>Contact Us</h5>
+               <form
+                  class="text-center py-2"
+                  action="https://form2channel.com?form=contact"
+                  method="POST"
+                  enctype="multipart/form-data"
+               >
+                  <!-- form2channel setup -->
+                  <input
+                     type="hidden"
+                     name="formto_googlesheets"
+                     value="dsc@daiict.ac.in"
+                  />
+                  <input
+                     type="email"
+                     id="SenderEmail"
+                     name="Email"
+                     class="form-control mb-3 h-3r"
+                     placeholder="Your e-mail"
+                     required
+                  />
+                  <input
+                     type="text"
+                     id="SenderName"
+                     name="Name"
+                     class="form-control mb-3 h-3r"
+                     placeholder="Your Name"
+                     required
+                  />
+                  <textarea
+                     id="SenderMessage"
+                     name="Message"
+                     class="form-control h-6r"
+                     placeholder="Your message"
+                     required
+                  ></textarea>
+
+                  <button
+                     class="btn btn-outline-dark btn-block my-4"
+                     type="submit"
+                  >
+                     Submit
+                  </button>
+               </form>
+               <!-- hidden toasts -->
+               <div
+                  class="
+                     toast
+                     hide
+                     align-items-center
+                     text-white
+                     bg-success
+                     border-0
+                  "
+                  id="successToast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+               >
+                  <div class="d-flex">
+                     <div class="toast-body">
+                        Thank you for reaching out to us.
+                     </div>
+                     <button
+                        type="button"
+                        class="btn-close btn-close-white me-2 m-auto"
+                        data-bs-dismiss="toast"
+                        aria-label="Close"
+                     ></button>
+                  </div>
+               </div>
+
+               <div
+                  class="
+                     toast
+                     hide
+                     align-items-center
+                     text-white
+                     bg-danger
+                     border-0
+                  "
+                  id="alertToast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+               >
+                  <div class="d-flex">
+                     <div class="toast-body">
+                        <!-- available error status will be added here by the script -->
+                        Oops! looks like your request encountered some error.
+                     </div>
+                     <button
+                        type="button"
+                        class="btn-close btn-close-white me-2 m-auto"
+                        data-bs-dismiss="toast"
+                        aria-label="Close"
+                     ></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <hr />
+         <!-- Copyright -->
+         <p class="mt-4 text-center">
+            <small>&copy; 2021 Developer Student Club, DA-IICT</small>
+         </p>
+      </footer>
+
+      <!-- Project Ends Here -->
+
+      <!-- Bootstrap JS bundle -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+         crossorigin="anonymous"
+      ></script>
+
+      <script type="text/javascript" src="/js/navbar.js"></script>
+      <script type="text/javascript" src="/js/footer.js"></script>
+   </body>
 </html>
