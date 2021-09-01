@@ -31,6 +31,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://statebait.github.io"><img src="https://avatars1.githubusercontent.com/u/22408263?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohamed Shadab</b></sub></a><br /><a href="https://github.com/ossdaiict/dsc-website/commits?author=statebait" title="Code">💻</a> <a href="#infra-statebait" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/RoneelV"><img src="https://avatars.githubusercontent.com/u/47793622?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Roneel</b></sub></a><br /><a href="https://github.com/ossdaiict/dsc-website/commits?author=RoneelV" title="Code">💻</a> <a href="#design-RoneelV" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/prakhartech"><img src="https://avatars.githubusercontent.com/u/43299901?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Prakhar Agrawal</b></sub></a><br /><a href="https://github.com/ossdaiict/dsc-website/commits?author=prakhartech" title="Code">💻</a> <a href="#design-prakhartech" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/miti2001"><img src="https://avatars.githubusercontent.com/u/71545727?v=4?s=100" width="100px;" alt=""/><br /><sub><b>miti2001</b></sub></a><br /><a href="https://github.com/ossdaiict/dsc-website/commits?author=miti2001" title="Code">💻</a> <a href="#design-miti2001" title="Design">🎨</a></td>
   </tr>
 </table>
 
